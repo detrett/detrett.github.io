@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Fuzzy+Bubbles:wght@700&family=Inter:wght@100;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<!--Subforum.html provides the GENERAL VIEW of a subforum page with 'Soft Drinks' as a template subforum-->
+
+<body>
+    <!--Start of Header (Background + Logo + Title)-->
+    <header>
+        <div class="box header">
+            <a href="Index.html" class="logo" title="Beverage Goblins Logo">
+                <img src="img/alt-logo.png" alt="Logo" class="logo-img">
+                <div>
+                    <span class="logo-font">
+                        Beverage
+                        Goblins
+                    </span>
+                </div>
+            </a>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <!--Start of Main Container-->
+    <div class="banner clearfix container-fluid ">
+
+        <!--Start of Banner (Welcome + Log In/ Sign In + User Icon (After Log In) + Breadcrumbs)-->
+        <div class="background-light card flex-1 row">
+            <div class="col-md-8 p-4">
+                <p class="header-font">
+                    Welcome to Soft Drinks.
+                    <br> Here you can discuss anything related to all carbonated drinks.
+                </p>
+            </div>
+
+            <div class="col-md-4 p-4 text-justify">
+                <span>
+                    <a href="#index.html" class="btn btn-link" role="button" title="Sign Up">Sign Up</a>
+                </span>
+                <span>
+                    <a href="#index.html" class="btn btn-link" role="button" title="Sign In">Sign In</a>
+                </span>
+
+                <!--USER ICON TO DISPLAY AFTER LOG IN-->
+                <!-- <span>
+                    <i class="fa-border fa-solid fa-user" style="color: #1d1d09;"></i>
+                </span> -->
+            </div>
+            <div class="background-dark card-footer justify-content-start">
+                <div class="col-md">
+                    Board Index » Soft Drinks
+                </div>
+            </div>
+        </div>
+        <!--End of Banner-->
+
+
+        <!--Subforum Title-->
+        <div class="row">
+            <div class="col" id="title">
+                <h1 class="title-font">Soft Drinks</h1>
+            </div>
+        </div>
+
+
+        <!--Start of Main Subforums Container-->
+        <section class="">
+            <div class="subforum-container">
+
+                <!--Subforum Banner-->
+                <div class="border-round-top sub-banner row">
+                    <!--PAGINATION-->
+                    <nav aria-label="Page navigation" class="pagination-container">
+                        <ul class="pagination margin-bt-0">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Last" data-bs-toggle="tooltip"
+                                    title="Go to last page">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--End of Subforum Banner-->
+
+
+                <!--Subforum Content-->
+                <div>
+                    <!--THIS PART WILL BE IMPLEMENTED BY THE FRAMEWORK USING THE DATABASE INSTEAD OF MANUALLY-->
+                    <ul>
+                        <!--LEGEND-->
+                        <li>
+                            <div class="row bg-gradient" id="subforum-header">
+                                <div class="col-1 subforum-title-container hidden-mobile">
+                                    <p>
+                                        Status
+                                    </p>
+                                </div>
+                                <div class="col-9 col-md-7 subforum-title-container">
+                                    <p class="align-left">
+                                        Title
+                                    </p>
+                                </div>
+                                <div class="col-1 subforum-title-container hidden-mobile">
+                                    <p>
+                                        Replies
+                                    </p>
+                                </div>
+                                <div class="col-3 subforum-title-container">
+                                    <p>
+                                        Last Post
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--THREAD-->
+                        <li>
+                            <div class="background-light border-item-bottom row">
+
+                                <!--Status-->
+                                <div class="col-1 icon-container hidden-mobile">
+                                    <i class="fa-solid fa-lock" data-bs-toggle="tooltip" title="Locked Thread"></i>
+                                    <i class="fa-solid fa-bullhorn" data-bs-toggle="tooltip" title="Announcement"></i>
+                                    <i class="fa-solid fa-thumbtack icon-border icon-mini" data-bs-toggle="tooltip"
+                                        title="Pinned Thread" style="color: #433b60;"></i>
+                                </div>
+
+                                <!--Title-->
+                                <div class="col-9 col-md-7 forum-title-container">
+                                    <a href="" class="thread-title-font thread-link" title="Go to thread">
+                                        <span>
+                                            Soft Drinks: Rules and Announcements
+                                        </span>
+                                    </a>
+                                    <!--@thread.Title-->
+                                    <p class="thread-subtitle-font">
+                                        By
+                                        <a href="" class="user-link" title="Go to profile">Fizzy</a>
+                                        on July 2, 2023
+                                    </p>
+                                    <!--@thread.Author-->
+                                </div>
+
+                                <!--Replies-->
+                                <div class="col-1 icon-container hidden-mobile">
+                                    <ul>
+                                        <li class="centered">
+                                            <p>
+                                                1
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Last Poster-->
+                                <div class="col-3 last-poster-container">
+                                    <div class="row">
+                                        <!--Icon-->
+                                        <div class="col-6 col-md-3 last-poster-icon">
+
+                                            <a href="" class="" title="Go to profile">
+                                                <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                            </a>
+
+                                        </div>
+
+                                        <div class="col-md-9 centered-sm">
+
+                                            <div>
+                                                <a href="" class="user-link" title="Go to profile">
+                                                    Fizzy
+                                                </a>
+                                                <!--@Thread.replyList.Last().User (?)-->
+                                            </div>
+
+                                            <div>
+                                                <a href="" class="user-link hidden-mobile" title="Go to last post">
+                                                    Aug 2, 2023
+                                                </a>
+                                                <!--@Thread.replyList.Last().Date (?)-->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--END OF THREAD-->
+
+
+                        <!--THREAD-->
+                        <li>
+                            <div class="background-light border-item-bottom row">
+
+                                <!--Status-->
+                                <div class="col-1 icon-container hidden-mobile">
+                                    <i class="fa-solid fa-comment-dots" data-bs-toggle="tooltip"
+                                        title="Unread Posts"></i>
+                                    <i class="fa-solid fa-star gradient-text" data-bs-toggle="tooltip"
+                                        title="Featured Thread"></i>
+                                </div>
+
+                                <!--Title-->
+                                <div class="col-9 col-md-7 forum-title-container">
+                                    <a href="" class="thread-title-font thread-link" title="Go to thread">
+                                        <span>
+                                            The 2023 Drinks Compendium
+                                        </span>
+                                    </a>
+                                    <!--@thread.Title-->
+                                    <p class="thread-subtitle-font">
+                                        By
+                                        <a href="" class="user-link" title="Go to profile">Mr Bubbles</a>
+                                        on September 7, 2023
+                                    </p>
+                                    <!--@thread.Author-->
+                                </div>
+
+                                <!--Replies-->
+                                <div class="col-1 icon-container hidden-mobile">
+                                    <ul>
+                                        <li class="centered">
+                                            <p>
+                                                7
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Last Poster-->
+                                <div class="col-3 last-poster-container">
+                                    <div class="row">
+                                        <!--Icon-->
+                                        <div class="col-6 col-md-3 last-poster-icon">
+
+                                            <a href="" class="" title="Go to profile">
+                                                <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                            </a>
+
+                                        </div>
+
+                                        <div class="col-md-9 centered-sm">
+
+                                            <div>
+                                                <a href="" class="user-link" title="Go to profile">
+                                                    Mr Bubbles
+                                                </a>
+                                                <!--@Thread.replyList.Last().User (?)-->
+                                            </div>
+
+                                            <div>
+                                                <a href="" class="user-link hidden-mobile" title="Go to last post">
+                                                    Sep 7, 2023
+                                                </a>
+                                                <!--@Thread.replyList.Last().Date (?)-->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--END OF THREAD-->
+
+
+                        <!--THREAD-->
+                        <li>
+                            <div class="background-light border-item-bottom row">
+
+                                <!--Status-->
+                                <div class="col-1 icon-container hidden-mobile">
+                                    <i class="fa-solid fa-comment-dots" data-bs-toggle="tooltip"
+                                        title="Unread Posts"></i>
+                                </div>
+
+                                <!--Title-->
+                                <div class="col-9 col-md-7 forum-title-container">
+                                    <a href="Thread.html" class="thread-title-font thread-link" title="Go to thread">
+                                        <span>
+                                            Pepsi Vs Coke
+                                        </span>
+                                    </a>
+                                    <!--@thread.Title-->
+                                    <p class="thread-subtitle-font">
+                                        By
+                                        <a href="" class="user-link" title="Go to profile">Souda</a>
+                                        on September 4, 2023
+                                    </p>
+                                    <!--@thread.Author-->
+                                </div>
+
+                                <!--Replies-->
+                                <div class="col-1 icon-container hidden-mobile">
+                                    <ul>
+                                        <li class="centered">
+                                            <p>
+                                                12
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Last Poster-->
+                                <div class="col-3 last-poster-container">
+                                    <div class="row">
+                                        <!--Icon-->
+                                        <div class="col-6 col-md-3 last-poster-icon">
+
+                                            <a href="" class="" title="Go to profile">
+                                                <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                            </a>
+
+                                        </div>
+
+                                        <div class="col-md-9 centered-sm">
+
+                                            <div>
+                                                <a href="" class="user-link" title="Go to profile">
+                                                    pops97
+                                                </a>
+                                                <!--@Thread.replyList.Last().User (?)-->
+                                            </div>
+
+                                            <div>
+                                                <a href="" class="user-link hidden-mobile" title="Go to last post">
+                                                    Sep 7, 2023
+                                                </a>
+                                                <!--@Thread.replyList.Last().Date (?)-->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--END OF THREAD-->
+
+                        <!--THREAD-->
+                        <li>
+                            <div class="background-dark row">
+
+                                <!--Status-->
+                                <div class="col-1 icon-container hidden-mobile">
+                                    <i class="fa-solid fa-trash" data-bs-toggle="tooltip" title="Removed Thread"></i>
+                                </div>
+
+                                <!--Title-->
+                                <div class="col-9 col-md-7 forum-title-container">
+                                    <span>
+                                        [Deleted]
+                                    </span>
+                                    </a>
+                                    <!--@thread.Title-->
+                                    <p class="thread-subtitle-font">
+                                        By
+                                        <a href="" class="user-link" title="Go to profile">Fizzy</a>
+                                    </p>
+                                    <!--@thread.Author-->
+                                </div>
+
+                                <!--Replies-->
+                                <div class="col-1 icon-container hidden-mobile">
+                                    <ul>
+                                        <li class="centered">
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Last Poster-->
+                                <div class="col-3 last-poster-container">
+                                    <div class="row">
+                                        <!--Icon-->
+                                        <div class="col-6 col-md-3 last-poster-icon">
+
+
+
+                                        </div>
+
+                                        <div class="col-md-9 centered-sm">
+
+                                            <div>
+
+
+                                            </div>
+
+                                            <div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--END OF THREAD-->
+
+                        <!--THREAD-->
+                        <li>
+                            <div class="background-light row border-round-bottom">
+
+                                <!--Status-->
+                                <div class="col-1 icon-container hidden-mobile">
+                                    <i class="fa-solid fa-comment-slash" data-bs-toggle="tooltip"
+                                        title="No New Posts"></i>
+                                </div>
+
+                                <!--Title-->
+                                <div class="col-9 col-md-7 forum-title-container">
+                                    <a href="" class="thread-title-font thread-link" title="Go to thread">
+                                        <span>
+                                            Best knockoffs?
+                                        </span>
+                                    </a>
+                                    <!--@thread.Title-->
+                                    <p class="thread-subtitle-font">
+                                        By
+                                        <a href="" class="user-link" title="Go to profile">Juiced</a>
+                                        on August 28, 2023
+                                    </p>
+                                    <!--@thread.Author-->
+                                </div>
+
+                                <!--Replies-->
+                                <div class="col-1 icon-container hidden-mobile">
+                                    <ul>
+                                        <li class="centered">
+                                            <p>
+                                                5
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Last Poster-->
+                                <div class="col-3 last-poster-container">
+                                    <div class="row">
+                                        <!--Icon-->
+                                        <div class="col-6 col-md-3 last-poster-icon">
+
+                                            <a href="" class="" title="Go to profile">
+                                                <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                            </a>
+
+                                        </div>
+
+                                        <div class="col-md-9 centered-sm">
+
+                                            <div>
+                                                <a href="" class="user-link" title="Go to profile">
+                                                    Turbo
+                                                </a>
+                                                <!--@Thread.replyList.Last().User (?)-->
+                                            </div>
+
+                                            <div>
+                                                <a href="" class="user-link hidden-mobile" title="Go to last post">
+                                                    Aug 30, 2023
+                                                </a>
+                                                <!--@Thread.replyList.Last().Date (?)-->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--END OF THREAD-->
+
+                    </ul>
+
+                </div>
+                <!--End of Subforum Content-->
+            </div>
+
+
+        </section>
+        <!--End of Subforums Container-->
+
+
+        <!--Back to top button-->
+        <a href="" id="back-to-top-button" data-bs-toggle="tooltip" title="Back to top"></a>
+
+
+
+        <!--Start of Footer-->
+        <div class="card row" id="footer">
+            <div class="background-dark card-header">
+                Board Index
+            </div>
+            <div class="background-light card-body flex-2">
+                <div class="col-6 col-md-3">
+                    <p><b>Legend :: </b>Administrators, Moderators, Users</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p>Newest Member: <b>bubbletrouble</b></p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <p>Total Threads: <b>256</b></p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <p>Total Posts: <b>2752</b></p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <p>Total Users: <b>78</b></p>
+                </div>
+
+            </div>
+        </div>
+        <!--End of Footer-->
+
+    </div>
+    <!--End of Main Container-->
+
+
+    <!--SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
+        integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/7918846ba0.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>

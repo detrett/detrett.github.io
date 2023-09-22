@@ -1,0 +1,30 @@
+/*GRADIENTS*/
+.gradient-purple-pink{
+    background: linear-gradient(90deg, rgba(67, 59, 96, 0.5) 50%, rgba(248, 58, 91, 1) 100%);
+}
+
+.gradient-purple-pink-yellow-option-1{
+    background: linear-gradient(45deg, rgba(45,41,60,1) 25%, rgba(248,58,91,1) 80%, rgba(255,202,68,0.8800654050682774) 100%);
+}
+
+.gradient-purple-pink-yellow-option-2{
+    background: linear-gradient(45deg, rgba(67,59,96,1) 25%, rgba(248,58,91,1) 75%, rgba(255,202,68,0.8800654050682774) 100%);
+}
+
+
+/*COLORS*/
+.pink-1{
+    color: #F83A5B;
+}
+
+.purple-dark-1{
+    color: #433B60;
+}
+.purple-dark-2{
+    color:#2d293c;
+}
+
+.yellow-1{
+    color: #FFCA5B;
+}
+

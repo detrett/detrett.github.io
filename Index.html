@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Fuzzy+Bubbles:wght@700&family=Inter:wght@100;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Start of Header (Background + Logo + Title)-->
+    <header>
+        <div class="box">
+            <a href="Index.html" class="logo">
+                <img src="img/alt-logo.png" alt="Logo" class="logo-img">
+                <div>
+                    <span class="logo-font">
+                        Beverage
+                        Goblins
+                    </span>
+                </div>
+            </a>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <!--Start of Main Container-->
+    <div class="banner clearfix container-fluid ">
+
+        <!--Start of Banner (Welcome + Log In/ Sign In + User Icon (After Log In) + Breadcrumbs)-->
+        <div class="background-light card flex-1 row">
+            <div class="col-md-8 p-4">
+                <p class="header-font">
+                    Welcome to the Beverage Goblins online community.
+                    <br> A place to discuss all things related to drinks with other people that share your enthusiasm
+                    for beverages.
+                </p>
+            </div>
+
+            <div class="col-md-4 p-4 text-justify">
+                <span>
+                    <a href="#index.html" class="btn btn-link" role="button">Sign Up</a>
+                </span>
+                <span>
+                    <a href="#index.html" class="btn btn-link" role="button">Sign In</a>
+                </span>
+
+                <!--USER ICON TO DISPLAY AFTER LOG IN-->
+                <!-- <span>
+                    <i class="fa-border fa-solid fa-user" style="color: #1d1d09;"></i>
+                </span> -->
+            </div>
+            <div class="background-dark card-footer justify-content-start">
+                <div class="col-md">
+                    Board Index
+                </div>
+            </div>
+        </div>
+
+
+        <!--End of Banner-->
+
+        <!--"Forums" Title-->
+        <div class="row">
+            <div class="col" id="title">
+                <h1 class="title-font">Forums</h1>
+            </div>
+        </div>
+
+        <!--Start of Main Forums Container (Forum Title + Subforum List + Collapsible Button)-->
+        <section class="forum-container">
+            <div class="bg-gradient row">
+                <h2 class="col-6 list-title-font">Main Forums</h2>
+                <a class="col-6" data-bs-toggle="collapse" href="#mainForums" role="button" aria-expanded="true"
+                    aria-controls="mainForums">
+                    <i class="fa-solid fa-minus icon-right" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            <div class="show" id="mainForums">
+                <!--THIS PART WILL BE IMPLEMENTED BY THE FRAMEWORK USING THE DATABASE INSTEAD OF MANUALLY-->
+                <ul>
+
+                    <li>
+                        <div class="background-dark row std-height">
+                            <div class="col-1 icon-container hidden-mobile">
+                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="col-9 col-md-4 forum-title-container-sm">
+                                <p class="forum-title-font">Updates & Announcements</p>
+                                <!--@subforum.Title-->
+                                <p class="margin-bt-12">Information about what's happening in the Beverage
+                                    Goblins forum.</p>
+                                <!--@subforum.Description-->
+                            </div>
+
+                            <div class="col-2 icon-container">
+                                <ul>
+                                    <li class="centered">
+                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                    </li>
+                                    <li class="only-mobile">
+                                        <p class="date-font">Today</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-5 forum-title-container-sm hidden-mobile">
+                                <p class="thread-title-font-lg">Drink of the Year 2023 Winner Awards!</p>
+                                <!--@thread.Title-->
+                                <p class="thread-subtitle-font">By <b>Fizzy</b>, 8 hours ago</p>
+                                <!--"By @thread.LastComment.User, @thread.LastComment.TimeSince"-->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="background-light border-round-bottom row std-height">
+                            <div class="col-1 icon-container hidden-mobile">
+                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="col-9 col-md-4 forum-title-container-sm">
+                                <p class="forum-title-font">Introduce Yourself</p>
+                                <p class="margin-bt-12">A space for new members to introduce themselves to the
+                                    community.</p>
+                            </div>
+
+                            <div class="col-2 icon-container">
+                                <ul>
+                                    <li class="centered">
+                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                    </li>
+                                    <li class="only-mobile">
+                                        <p class="date-font">Today</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-5 forum-title-container-sm hidden-mobile">
+                                <p class="thread-title-font-lg">Hi everyone :)</p>
+                                <p class="thread-subtitle-font">By <b>bubbletrouble</b>, 2 hours ago</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <!--End of Main Forums Container-->
+
+        <!--Start of Discussion Forums Container (Forum Title + Subforum List + Collapsible Button)-->
+        <section class="forum-container">
+            <div class="bg-gradient row">
+                <h2 class="col-6 list-title-font">Discussions</h2>
+                <a class="col-6" data-bs-toggle="collapse" href="#discussionForums" role="button" aria-expanded="true"
+                    aria-controls="discussionForums">
+                    <i class="fa-solid fa-minus icon-right" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            <div class="show" id="discussionForums">
+                <!--THIS PART WILL BE IMPLEMENTED BY THE FRAMEWORK USING THE DATABASE INSTEAD OF MANUALLY-->
+                <ul>
+
+                    <li>
+                        <div class="background-dark row std-height">
+                            <div class="col-1 icon-container hidden-mobile">
+                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="col-9 col-md-4 forum-title-container-sm">
+                                <a href="Subforum.html" class="forum-title-font thread-link">Soft Drinks</a>
+                                <!--@subforum.Title-->
+                                <p class="margin-bt-12">A place to discuss your favorite carbonated drinks.</p>
+                                <!--@subforum.Description-->
+                            </div>
+
+                            <div class="col-2 icon-container">
+                                <ul>
+                                    <li class="centered">
+                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                    </li>
+                                    <li class="only-mobile">
+                                        <p class="date-font">Sep 6</p>
+                                        <!--@thread.LastReply.Date-->
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-5 forum-title-container-sm hidden-mobile">
+                                <p class="thread-title-font-lg">Re: Alright here we go... Pepsi Vs Coke!!</p>
+                                <!--@thread.Title-->
+                                <p class="thread-subtitle-font">By <b>Turbo</b>, Wed Sep 6, 2023 12:41 pm</p>
+                                <!--"By @thread.LastComment.User, @thread.LastComment.TimeSince"-->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="background-light row std-height">
+                            <div class="col-1 icon-container hidden-mobile">
+                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="col-9 col-md-4 forum-title-container-sm">
+                                <p class="forum-title-font">Energy Drinks</p>
+                                <p class="margin-bt-12">For those who are in search of a little boost.</p>
+                            </div>
+
+                            <div class="col-2 icon-container">
+                                <ul>
+                                    <li class="centered">
+                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                    </li>
+                                    <li class="only-mobile">
+                                        <p class="date-font">Today</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-5 forum-title-container-sm hidden-mobile">
+                                <p class="thread-title-font-lg">Definitive Monster flavours tier list</p>
+                                <p class="thread-subtitle-font">By <b>m0nst3r4dd1ct</b>, 37 minutes ago</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="background-dark row std-height">
+                            <div class="col-1 icon-container hidden-mobile">
+                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="col-9 col-md-4 forum-title-container-sm">
+                                <p class="forum-title-font">Water</p>
+                                <p class="margin-bt-12">This is a space to discuss the importance of staying
+                                    hydrated in a world full of tasty drinks.</p>
+                            </div>
+
+                            <div class="col-2 icon-container">
+                                <ul>
+                                    <li class="centered">
+                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                    </li>
+                                    <li class="only-mobile">
+                                        <p class="date-font">Sep 5</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-5 forum-title-container-sm hidden-mobile">
+                                <p class="thread-title-font-lg">Re: WaterTok - Is flavoured water still considered
+                                    water?
+                                </p>
+                                <p class="thread-subtitle-font">By <b>hydration_nation</b>, Tue Sep 5, 2023 18:16 pm</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="background-light border-round-bottom row std-height">
+                            <div class="col-1 icon-container hidden-mobile">
+                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="col-9 col-md-4 forum-title-container-sm">
+                                <p class="forum-title-font">Other Drinks</p>
+                                <p class="margin-bt-12">Are you into smoothies, tea, kombucha or just plain old
+                                    coffee? Discuss your love for all drinks that don't belong in the other forums.</p>
+                            </div>
+
+                            <div class="col-2 icon-container">
+                                <ul>
+                                    <li class="centered">
+                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                    </li>
+                                    <li class="only-mobile">
+                                        <p class="date-font">Today</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-5 forum-title-container-sm hidden-mobile">
+                                <p class="thread-title-font-lg">Just tried Kombucha for the first time</p>
+                                <p class="thread-subtitle-font">By <b>aGeverageBoblin</b>, 4 hours ago</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <!--End of Discussion Forums Container-->
+
+        <!--Start of Other Forums Container (Forum Title + Subforum List + Collapsible Button)-->
+        <section class="forum-container">
+            <div class="bg-gradient row">
+                <h2 class="col-6 list-title-font">Other Forums</h2>
+                <a class="col-6" data-bs-toggle="collapse" href="#otherForums" role="button" aria-expanded="true"
+                    aria-controls="otherForums">
+                    <i class="fa-solid fa-minus icon-right" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            <div class="show" id="otherForums">
+                <!--THIS PART WILL BE IMPLEMENTED BY THE FRAMEWORK USING THE DATABASE INSTEAD OF MANUALLY-->
+                <ul>
+
+                    <li>
+                        <div class="background-dark row std-height">
+                            <div class="col-1 icon-container hidden-mobile">
+                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="col-9 col-md-4 forum-title-container-sm">
+                                <p class="forum-title-font">Off Topic</p>
+                                <!--@subforum.Title-->
+                                <p class="margin-bt-12">Any serious topics that are unrelated to beverages should go in
+                                    here.</p>
+                                <!--@subforum.Description-->
+                            </div>
+
+                            <div class="col-2 icon-container">
+                                <ul>
+                                    <li class="centered">
+                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                    </li>
+                                    <li class="only-mobile">
+                                        <p class="date-font">Today</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-5 forum-title-container-sm hidden-mobile">
+                                <p class="thread-title-font-lg">Re: Control+V Thread</p>
+                                <!--@thread.Title-->
+                                <p class="thread-subtitle-font">By <b>The Hierophant</b>, 6 hours ago</p>
+                                <!--"By @thread.LastComment.User, @thread.LastComment.TimeSince"-->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="background-light border-round-bottom row std-height">
+                            <div class="col-1 icon-container hidden-mobile">
+                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="col-9 col-md-4 forum-title-container-sm">
+                                <p class="forum-title-font">Daily Rumble</p>
+                                <p class="margin-bt-12">Long-running threads in which to discuss the small things about
+                                    daily life.</p>
+                            </div>
+
+                            <div class="col-2 icon-container">
+                                <ul>
+                                    <li class="centered">
+                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                    </li>
+                                    <li class="only-mobile">
+                                        <p class="date-font">Today</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-5 forum-title-container-sm hidden-mobile">
+                                <p class="thread-title-font-lg">Re: Post your song of the day</p>
+                                <p class="thread-subtitle-font">By <b>Dr Itchy</b>, 16 hours ago</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <!--End of Other Forums Container-->
+
+        <!--Start of Footer-->
+        <div class="card row" id="footer">
+            <div class="background-dark card-header">
+                Board Index
+            </div>
+            <div class="background-light card-body flex-2">
+                <div class="col-6 col-md-3">
+                    <p><b>Legend :: </b>Administrators, Moderators, Users</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p>Newest Member: <b>bubbletrouble</b></p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <p>Total Threads: <b>256</b></p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <p>Total Posts: <b>2752</b></p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <p>Total Users: <b>78</b></p>
+                </div>
+
+            </div>
+        </div>
+        <!--End of Footer-->
+
+    </div>
+    <!--End of Main Container-->
+
+    <!--Back to top button-->
+    <a href="" id="back-to-top-button" data-bs-toggle="tooltip" title="Back to top"></a>
+
+
+    <!--SCRIPTS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
+        integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/7918846ba0.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>

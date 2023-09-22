@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Fuzzy+Bubbles:wght@700&family=Inter:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<!--Thread.html provides the GENERAL VIEW of a thread page-->
+
+<body>
+    <!--Start of Header (Background + Logo + Title)-->
+    <header>
+        <div class="box header">
+            <a href="Index.html" class="logo" title="Beverage Goblins Logo">
+                <img src="img/alt-logo.png" alt="Logo" class="logo-img">
+                <div>
+                    <span class="logo-font">
+                        Beverage
+                        Goblins
+                    </span>
+                </div>
+            </a>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <!--Start of Main Container-->
+    <div class="banner clearfix container-fluid ">
+
+        <!--Start of Banner (Welcome + Log In/ Sign In + User Icon (After Log In) + Breadcrumbs)-->
+        <div class="background-light card flex-1 row">
+            <div class="col-md-8 p-4">
+                <p class="header-font">
+                    Welcome to Soft Drinks.
+                    <br> Here you can discuss anything related to all carbonated drinks.
+                </p>
+            </div>
+
+            <div class="col-md-4 p-4 text-justify">
+                <span>
+                    <a href="#index.html" class="btn btn-link" role="button" title="Sign Up">Sign Up</a>
+                </span>
+                <span>
+                    <a href="#index.html" class="btn btn-link" role="button" title="Sign In">Sign In</a>
+                </span>
+
+                <!--USER ICON TO DISPLAY AFTER LOG IN-->
+                <!-- <span>
+                    <i class="fa-border fa-solid fa-user" style="color: #1d1d09;"></i>
+                </span> -->
+            </div>
+            <div class="background-dark card-footer justify-content-start">
+                <div class="col-md">
+                    Board Index » Soft Drinks » Pepsi Vs Coke
+                </div>
+            </div>
+        </div>
+        <!--End of Banner-->
+
+
+        <!--Subforum Title-->
+        <div class="row">
+            <div class="col" id="title">
+                <h1 class="title-font">Soft Drinks</h1>
+            </div>
+        </div>
+
+
+        <!--Start of Thread Container-->
+        <section class="">
+            <div class="thread-container background-dark card row">
+
+                <!--Thread title-->
+                <div>
+                    <h2 class="thread-page-title">Pepsi Vs Coke</h2>
+                </div>
+
+
+                <!--Post start-->
+                <article class="background-light card post-container" id="comment-1">
+
+                    <div class="row">
+                        <!--Side content (Author, image, info)-->
+                        <div class="aside-post hidden-mobile col-md-2">
+                            <a href="" title="Go to profile" class="user-link">
+                                <h3 class="aside-user-style">Souda</h3>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="" class="aside-user-photo-container">
+                                        <i class="fa-regular fa-circle-user aside-user-photo"></i>
+                                    </a>
+                                </li>
+                                <li class="margin-bt-20">
+                                    <span class="aside-member-title">Member</span>
+                                </li>
+                                <li class="aside-left-align">
+                                    <span class="aside-subtitle">Posts: 45</span>
+
+                                </li>
+                                <li class="aside-left-align">
+                                    <span class="aside-subtitle">Joined: 16th March, 2023</span>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <!--End of side content-->
+                        <!--Main Content-->
+                        <div class="col-12 col-md-10 post-top">
+                            <!--Top of Post (Title, date, buttons)-->
+                            <div>
+                                <div class="dropdown-center">
+                                    <!--Ellipsis-->
+                                    <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis ellipsis"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="" class="dropdown-item" data-bs-toggle="modal"
+                                                data-bs-target="#shareModal">
+                                                Share
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Only for mobile -->
+                                <div class="only-mobile">
+
+                                    <div class="post-top-user-photo-automargin">
+                                        <a href="" class="post-top-user-photo-container">
+                                            <i class="fa-regular fa-circle-user post-top-user-photo"></i>
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="post-top-title">Souda</h4>
+                                        <a href="#comment-1" class="post-top-subtitle" title="Jump to comment">
+                                            Posted <time datetime="2023-09-04T12:05:00">September 4</time>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- For regular display -->
+                                <h4 class="post-top-title hidden-mobile">Pepsi Vs Coke</h4>
+                                <a href="#comment-1" class="post-top-subtitle hidden-mobile" title="Jump to comment">
+                                    Posted <time datetime="2023-09-04T12:05:00">September 4</time>
+                                </a>
+                            </div>
+                            <!--Body of Post-->
+                            <div class="post-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolor soluta!
+                                    Obcaecati tempore quisquam qui maiores fugiat quas consequuntur debitis ad itaque
+                                    nisi sunt autem, molestiae quia quibusdam, quidem laborum.
+                                </p>
+                            </div>
+                        </div>
+                        <!--End of Main Content-->
+                    </div>
+                </article>
+                <!--End of Post Content-->
+
+                <!--Post start-->
+                <article class="background-light card post-container" id="comment-2">
+
+                    <div class="row">
+                        <!--Side content (Author, image, info)-->
+                        <div class="aside-post hidden-mobile col-md-2">
+                            <a href="" title="Go to profile" class="user-link">
+                                <h3 class="aside-user-style">Juiced</h3>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="" class="aside-user-photo-container">
+                                        <i class="fa-regular fa-circle-user aside-user-photo"></i>
+                                    </a>
+                                </li>
+                                <li class="margin-bt-20">
+                                    <span class="aside-member-title">Member</span>
+                                </li>
+                                <li class="aside-left-align">
+                                    <span class="aside-subtitle">Posts: 22</span>
+
+                                </li>
+                                <li class="aside-left-align">
+                                    <span class="aside-subtitle">Joined: 5th July, 2023</span>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <!--End of side content-->
+                        <!--Main Content-->
+                        <div class="col-12 col-md-10 post-top">
+                            <!--Top of Post (Title, date, buttons)-->
+                            <div>
+                                <div class="dropdown-center">
+                                    <!--Ellipsis-->
+                                    <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis ellipsis"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="" class="dropdown-item" data-bs-toggle="modal"
+                                                data-bs-target="#shareModal">
+                                                Share
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Only for mobile -->
+                                <div class="only-mobile">
+
+                                    <div class="post-top-user-photo-automargin">
+                                        <a href="" class="post-top-user-photo-container">
+                                            <i class="fa-regular fa-circle-user post-top-user-photo"></i>
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="post-top-title">Juiced</h4>
+                                        <a href="#comment-1" class="post-top-subtitle" title="Jump to comment">
+                                            Posted <time datetime="2023-09-04T12:55:00">September 4</time>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- For regular display -->
+                                <h4 class="post-top-title hidden-mobile">Re: Pepsi Vs Coke</h4>
+                                <a href="#comment-1" class="post-top-subtitle hidden-mobile" title="Jump to comment">
+                                    Posted <time datetime="2023-09-04T12:05:00">September 4</time>
+                                </a>
+                            </div>
+                            <!--Body of Post-->
+                            <div class="post-body">
+                                <p>
+                                    Donec convallis, tellus vel mattis vestibulum, odio lacus ornare dolor, sed tempus
+                                    nisi justo eu neque. Mauris semper sit amet elit at dignissim. Duis et ultricies
+                                    turpis. Fusce pretium ex ornare velit aliquam auctor. Praesent vehicula, orci eget
+                                    posuere faucibus, libero metus porta purus, in dignissim felis velit at felis.
+                                </p>
+                                <p>
+                                    ellentesque lacinia a eros sed fringilla. Fusce in venenatis turpis. Morbi sapien
+                                    nibh, blandit id leo nec, facilisis dignissim augue. Curabitur quis arcu eget nulla
+                                    mollis consectetur vel sed mi. Donec sed mauris in dui tristique molestie et in
+                                    tortor. In pretium rutrum libero, ut congue mauris mattis non. Morbi id ultricies
+                                    sem, ut tristique nisi.
+                                </p>
+                            </div>
+                        </div>
+                        <!--End of Main Content-->
+                    </div>
+                </article>
+                <!--End of Post Content-->
+
+                <!--Post start-->
+                <article class="background-light card post-container" id="comment-3">
+
+                    <div class="row">
+                        <!--Side content (Author, image, info)-->
+                        <div class="aside-post hidden-mobile col-md-2">
+                            <a href="" title="Go to profile" class="user-link">
+                                <h3 class="aside-user-style">Fizzy</h3>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="" class="aside-user-photo-container">
+                                        <i class="fa-regular fa-circle-user aside-user-photo"></i>
+                                    </a>
+                                </li>
+                                <li class="margin-bt-20">
+                                    <span class="aside-mod-title">Moderator</span>
+                                </li>
+                                <li class="aside-left-align">
+                                    <span class="aside-subtitle">Posts: 112</span>
+
+                                </li>
+                                <li class="aside-left-align">
+                                    <span class="aside-subtitle">Joined: 1st January, 2023</span>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <!--End of side content-->
+                        <!--Main Content-->
+                        <div class="col-12 col-md-10 post-top">
+                            <!--Top of Post (Title, date, buttons)-->
+                            <div>
+                                <div class="dropdown-center">
+                                    <!--Ellipsis-->
+                                    <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis ellipsis"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="" class="dropdown-item" data-bs-toggle="modal"
+                                                data-bs-target="#shareModal">
+                                                Share
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Only for mobile -->
+                                <div class="only-mobile">
+
+                                    <div class="post-top-user-photo-automargin">
+                                        <a href="" class="post-top-user-photo-container">
+                                            <i class="fa-regular fa-circle-user post-top-user-photo"></i>
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="post-top-title">Fizzy</h4>
+                                        <a href="#comment-1" class="post-top-subtitle" title="Jump to comment">
+                                            Posted <time datetime="2023-09-04T12:55:00">September 4</time>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- For regular display -->
+                                <h4 class="post-top-title hidden-mobile">Re: Pepsi Vs Coke</h4>
+                                <a href="#comment-1" class="post-top-subtitle hidden-mobile" title="Jump to comment">
+                                    Posted <time datetime="2023-09-04T12:05:00">September 4</time>
+                                </a>
+                            </div>
+                            <!--Body of Post-->
+                            <div class="post-body">
+                                <p>
+                                    Aenean porta faucibus nibh convallis scelerisque. Sed pellentesque urna at mi tempus
+                                    iaculis. Ut pretium sodales luctus. Maecenas vel felis risus. Donec in molestie
+                                    dolor. Suspendisse bibendum erat orci, vel eleifend mauris ultricies eu. Morbi sed
+                                    dolor commodo, mattis urna et, dignissim lorem. Pellentesque commodo nisi quis
+                                    congue consectetur. Aenean eget faucibus erat. Cras at mattis tortor. Pellentesque
+                                    sed ex quis tellus condimentum laoreet eget ut libero. Nullam sodales tellus nec
+                                    libero posuere consectetur.
+                                </p>
+                            </div>
+                        </div>
+                        <!--End of Main Content-->
+                    </div>
+                </article>
+                <!--End of Post Content-->
+
+                <!--Guest Teaser (GUEST ONLY)-->
+                <section class="background-light card comment-container guest-only">
+
+                    <div class="row text-center margin-bt-40">
+                        <div class="col-12 guest-teaser-upper-box">
+                            <h5 class="bolder">Create an account or sign in to leave a comment</h5>
+                            <p>Only members of the Beverage Goblins community can leave a comment</p>
+                        </div>
+
+                        <div class="guest-teaser-lower-box row">
+                            <div class="box-shadow-2 col-5 guest-teaser-inner-box border-round-bottom">
+                                <h6 class="card-header">Create an account</h6>
+                                <p class="card-body">Sign up for a new account now!</p>
+                                <a href="" class="card-body guest-teaser-register-button">Sign Up Now</a>
+                            </div>
+                            <div class="box-shadow-2 col-5 guest-teaser-inner-box border-round-bottom">
+                                <h6 class="card-header">Sign in</h6>
+                                <p class="card-body">Already have an account? Sign in here!</p>
+                                <a href="" class="card-body guest-teaser-register-button">Sign In Here</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <!--End of Guest Teaser (GUEST ONLY)-->
+
+                <!--Message Box (MEMBER ONLY)-->
+                <section class="card comment-container member-only hide">
+                    <form action="" class="">
+                        <div class="row">
+
+                            <div action="" class="form-floating">
+                                <input type="text" class="form-control" id="replyTitle"
+                                    placeholder="Subject" value="Re: Pepsi Vs Coke">
+                                <label for="replyTitle">Subject</label>
+                            </div>
+
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Leave a comment</label>
+                            </div>
+                            <div>
+                                <input type="submit" value="Reply" title="Reply">
+                            </div>
+                        </div>
+
+
+                    </form>
+                </section>
+
+                <!--End of Message Box (MEMBER ONLY)-->
+
+            </div>
+
+        </section>
+        <!--End of Thread Container-->
+
+        <!--Go back to thread list-->
+        <div class="pager-container">
+            <a href="Subforum.html">
+                <i class="fa-solid fa-chevron-left"></i> Go back to topic listing
+            </a>
+        </div>
+
+        <!--Back to top button-->
+        <a href="" id="back-to-top-button" data-bs-toggle="tooltip" title="Back to top"></a>
+
+        <!--REMOVE LATER!!!! GUEST-MEMBER SWITCH!-->
+        <button id="member-switch" class="show" data-bs-toggle="tooltip"
+            title="You are a guest. Switch to Member"></button>
+
+        <button id="guest-switch" data-bs-toggle="tooltip" title="You are a member. Switch to Guest"></button>
+        <!--REMOVE LATER!!! TOASTS!!! -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="member-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="..." class="rounded me-2" alt="...">
+                    <strong class="me-auto">Beverage Goblins</strong>
+                    <small>Now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    You are now exploring as a Member.
+                </div>
+            </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="guest-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="..." class="rounded me-2" alt="...">
+                    <strong class="me-auto">Beverage Goblins</strong>
+                    <small>Now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    You are now exploring as a Guest.
+                </div>
+            </div>
+        </div>
+        <!--REMOVE LATER!!-->
+
+
+
+        <!--Start of Footer-->
+        <div class="card row" id="footer">
+            <div class="background-dark card-header">
+                Board Index
+            </div>
+            <div class="background-light card-body flex-2">
+                <div class="col-6 col-md-3">
+                    <p><b>Legend :: </b>Administrators, Moderators, Users</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p>Newest Member: <b>bubbletrouble</b></p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <p>Total Threads: <b>256</b></p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <p>Total Posts: <b>2752</b></p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <p>Total Users: <b>78</b></p>
+                </div>
+
+            </div>
+        </div>
+        <!--End of Footer-->
+
+    </div>
+    <!--End of Main Container-->
+
+    <!--Scripts-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
+        integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/7918846ba0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Sharing Modal -->
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 modal-font" id="shareModalLabel">Share this post!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-subtitle">Link to this comment:</h5>
+                    <input type="text" value="http://127.0.0.1:5500/Thread.html#comment-1" class="share-input">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
