@@ -13,8 +13,28 @@
 
 
 /*COLORS*/
+.cream{
+    color: #FFFEEB;
+}
+
 .pink-1{
     color: #F83A5B;
+}
+
+.pink-2{
+    color:#fc375c;
+}
+
+.salmon {
+    color: #ee7752;
+}
+
+.teal {
+    color: #23d5ab;
+}
+
+.blue {
+    color: #23a6d5;
 }
 
 .purple-dark-1{
@@ -27,4 +47,17 @@
 .yellow-1{
     color: #FFCA5B;
 }
+.yellow-2{
+    color: #D8C690;
+}
+.yellow-3{
+    color: #E5D9B6;
+}
 
+.pink-dark{
+    color: #D0A59F;
+}
+
+.pink-light{
+    color: #e4c0bb;
+}

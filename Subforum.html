@@ -18,50 +18,137 @@
 <body>
     <!--Start of Header (Background + Logo + Title)-->
     <header>
-        <div class="box header">
-            <a href="Index.html" class="logo" title="Beverage Goblins Logo">
-                <img src="img/alt-logo.png" alt="Logo" class="logo-img">
+
+        <div class="box row">
+            <a href="index.html" class="logo">
+
+                <!--Logo-->
                 <div>
+                    <img src="img/logo.png" alt="Logo" class="logo-img">
+                </div>
+
+                <!--Title-->
+                <div class="text-center">
                     <span class="logo-font">
                         Beverage
                         Goblins
                     </span>
                 </div>
+
+                <!--Logo-->
+                <div>
+                    <img src="img/logo.png" alt="Logo" class="logo-img flip">
+                </div>
+
             </a>
         </div>
+
     </header>
     <!--End of Header-->
+
 
     <!--Start of Main Container-->
     <div class="banner clearfix container-fluid ">
 
         <!--Start of Banner (Welcome + Log In/ Sign In + User Icon (After Log In) + Breadcrumbs)-->
-        <div class="background-light card flex-1 row">
-            <div class="col-md-8 p-4">
+        <div class="background-light card flex-1 row" id="banner">
+
+            <!--Welcome message-->
+            <div class="col-md-6 banner-message">
                 <p class="header-font">
-                    Welcome to Soft Drinks.
-                    <br> Here you can discuss anything related to all carbonated drinks.
+                    Welcome to the Beverage Goblins online community.
+                    <br> A place to discuss all things related to drinks with other people that share your enthusiasm
+                    for beverages.
                 </p>
             </div>
 
-            <div class="col-md-4 p-4 text-justify">
-                <span>
-                    <a href="#index.html" class="btn btn-link" role="button" title="Sign Up">Sign Up</a>
+            <!--Guest only-->
+            <div class="col-md-4 text-justify guest-only" id="buttonPanel">
+
+                <span class="">
+                    <a href="" class="card-body std-pink-btn" id="registerBtn">Register</a>
                 </span>
-                <span>
-                    <a href="#index.html" class="btn btn-link" role="button" title="Sign In">Sign In</a>
+                <span class="">
+                    <a href="" class="card-body std-purple-btn" id="signInBtn">Sign In</a>
                 </span>
 
-                <!--USER ICON TO DISPLAY AFTER LOG IN-->
-                <!-- <span>
-                    <i class="fa-border fa-solid fa-user" style="color: #1d1d09;"></i>
-                </span> -->
             </div>
-            <div class="background-dark card-footer justify-content-start">
-                <div class="col-md">
-                    Board Index » Soft Drinks
+
+            <!--Member only - Member panel-->
+            <div class="m-1 col-md-5 member-only hide flex-1" id="userPanel">
+
+                <!--User picture-->
+                <div class="user-picture-container-header">
+                    <a href="#" title="Go to profile">
+                        <img src="img/ppic.png" alt="Profile Picture" class="img-thumbnail">
+                    </a>
                 </div>
+
+                <!--User welcome-->
+                <div class="m-auto text-center" id="userWelcome">
+                    <span class="p-1">
+                        <em>
+                            Welcome,
+                            <span class="userTitle">Pengu</span>!
+                        </em>
+                    </span>
+                </div>
+
+                <div class="m-auto" id="banner-user-options">
+
+                    <div class="p-2">
+                        <!--Profile-->
+                        <div class="p-1">
+                            <a href="#" title="Go to profile" class="lighter-link">
+                                <i class="fa-solid fa-user"></i>
+                                My Profile
+                            </a>
+                        </div>
+                        <!--Settings-->
+                        <div class="p-1">
+                            <a href="#" title="Edit your profile" class="lighter-link">
+                                <i class="fa-solid fa-gear"></i>
+                                Settings
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-2">
+                        <!--Inbox-->
+                        <div class="p-1">
+                            <a href="#" title="Go to inbox" class="lighter-link">
+                                <i class="fa-solid fa-inbox"></i>
+                                Inbox
+                            </a>
+                        </div>
+                        <!--Sign Out-->
+                        <div class="p-1">
+                            <a href="" title="Sign Out" class="lighter-link">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Sign Out
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+            <!--End of member panel-->
+
+            <!--Breadcrumbs-->
+            <div class="background-dark card-footer justify-content-start">
+
+                <div class="col-md">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Board Index</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Soft Drinks</li>
+                        </ol>
+                    </nav>
+                </div>
+
+            </div>
+
         </div>
         <!--End of Banner-->
 
@@ -80,8 +167,9 @@
 
                 <!--Subforum Banner-->
                 <div class="border-round-top sub-banner row">
+
                     <!--PAGINATION-->
-                    <nav aria-label="Page navigation" class="pagination-container">
+                    <nav aria-label="Page navigation" class="pagination-container col-10">
                         <ul class="pagination margin-bt-0">
                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -96,6 +184,15 @@
                             </li>
                         </ul>
                     </nav>
+
+                    <div class="col-2">
+                        <a href="" class="btn card-body new-thread-btn guest-disabled disabled" role="button"
+                            aria-disabled="true" data-bs-toggle="tooltip" title="Make a new thread">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            New Thread
+                        </a>
+                    </div>
+
                 </div>
                 <!--End of Subforum Banner-->
 
@@ -106,7 +203,7 @@
                     <ul>
                         <!--LEGEND-->
                         <li>
-                            <div class="row bg-gradient" id="subforum-header">
+                            <div class="row" id="subforum-header">
                                 <div class="col-1 subforum-title-container hidden-mobile">
                                     <p>
                                         Status
@@ -144,7 +241,7 @@
 
                                 <!--Title-->
                                 <div class="col-9 col-md-7 forum-title-container">
-                                    <a href="" class="thread-title-font thread-link" title="Go to thread">
+                                    <a href="Thread.html" class="thread-title-font std-link" title="Go to thread">
                                         <span>
                                             Soft Drinks: Rules and Announcements
                                         </span>
@@ -176,7 +273,7 @@
                                         <div class="col-6 col-md-3 last-poster-icon">
 
                                             <a href="" class="" title="Go to profile">
-                                                <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                                <i class="fa-regular fa-circle-user fa-2xl"></i>
                                             </a>
 
                                         </div>
@@ -213,17 +310,29 @@
                                 <div class="col-1 icon-container hidden-mobile">
                                     <i class="fa-solid fa-comment-dots" data-bs-toggle="tooltip"
                                         title="Unread Posts"></i>
-                                    <i class="fa-solid fa-star gradient-text" data-bs-toggle="tooltip"
+                                    <i class="fa-solid fa-star gradient-text spin" data-bs-toggle="tooltip"
                                         title="Featured Thread"></i>
                                 </div>
 
                                 <!--Title-->
                                 <div class="col-9 col-md-7 forum-title-container">
-                                    <a href="" class="thread-title-font thread-link" title="Go to thread">
-                                        <span>
-                                            The 2023 Drinks Compendium
+                                    <div>
+                                        <a href="Thread.html" class="thread-title-font std-link" title="Go to thread">
+                                            <span>
+                                                The 2023 Drinks Compendium
+                                            </span>
+                                        </a>
+                                        <span class="pagination-mini">
+                                            <span class="pagination-mini-page">
+                                                <a href="Thread.html" data-bs-toggle="tooltip"
+                                                    title="Go to Page 1">1</a>
+                                            </span>
+                                            <span class="pagination-mini-page">
+                                                <a href="Thread.html" data-bs-toggle="tooltip"
+                                                    title="Go to Page 2">2</a>
+                                            </span>
                                         </span>
-                                    </a>
+                                    </div>
                                     <!--@thread.Title-->
                                     <p class="thread-subtitle-font">
                                         By
@@ -251,7 +360,7 @@
                                         <div class="col-6 col-md-3 last-poster-icon">
 
                                             <a href="" class="" title="Go to profile">
-                                                <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                                <i class="fa-regular fa-circle-user fa-2xl"></i>
                                             </a>
 
                                         </div>
@@ -292,11 +401,28 @@
 
                                 <!--Title-->
                                 <div class="col-9 col-md-7 forum-title-container">
-                                    <a href="Thread.html" class="thread-title-font thread-link" title="Go to thread">
-                                        <span>
-                                            Pepsi Vs Coke
+                                    <div>
+                                        <a href="Thread.html" class="thread-title-font std-link"
+                                            title="Go to thread">
+                                            <span>
+                                                Pepsi Vs Coke
+                                            </span>
+                                        </a>
+                                        <span class="pagination-mini">
+                                            <span class="pagination-mini-page">
+                                                <a href="Thread.html" data-bs-toggle="tooltip"
+                                                    title="Go to Page 1">1</a>
+                                            </span>
+                                            <span class="pagination-mini-page">
+                                                <a href="Thread.html" data-bs-toggle="tooltip"
+                                                    title="Go to Page 2">2</a>
+                                            </span>
+                                            <span class="pagination-mini-page">
+                                                <a href="Thread.html" data-bs-toggle="tooltip"
+                                                    title="Go to Page 3">3</a>
+                                            </span>
                                         </span>
-                                    </a>
+                                    </div>
                                     <!--@thread.Title-->
                                     <p class="thread-subtitle-font">
                                         By
@@ -324,7 +450,7 @@
                                         <div class="col-6 col-md-3 last-poster-icon">
 
                                             <a href="" class="" title="Go to profile">
-                                                <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                                <i class="fa-regular fa-circle-user fa-2xl"></i>
                                             </a>
 
                                         </div>
@@ -424,7 +550,7 @@
 
                                 <!--Title-->
                                 <div class="col-9 col-md-7 forum-title-container">
-                                    <a href="" class="thread-title-font thread-link" title="Go to thread">
+                                    <a href="Thread.html" class="thread-title-font std-link" title="Go to thread">
                                         <span>
                                             Best knockoffs?
                                         </span>
@@ -456,7 +582,7 @@
                                         <div class="col-6 col-md-3 last-poster-icon">
 
                                             <a href="" class="" title="Go to profile">
-                                                <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                                <i class="fa-regular fa-circle-user fa-2xl"></i>
                                             </a>
 
                                         </div>
@@ -494,37 +620,83 @@
         </section>
         <!--End of Subforums Container-->
 
+        <!--Go back to thread list-->
+        <div class="pager-container topic-listing-link">
+            <a href="Subforum.html" class="">
+                <i class="fa-solid fa-chevron-left"></i> Go back to forum listing
+            </a>
+        </div>
 
         <!--Back to top button-->
         <a href="" id="back-to-top-button" data-bs-toggle="tooltip" title="Back to top"></a>
 
+        <!--REMOVE LATER!!!! GUEST-MEMBER SWITCH!-->
+        <button id="member-switch" class="show" data-bs-toggle="tooltip"
+            title="You are a guest. Switch to Member"></button>
 
+        <button id="guest-switch" data-bs-toggle="tooltip" title="You are a member. Switch to Guest"></button>
+        <!--REMOVE LATER!!! TOASTS!!! -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="member-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="..." class="rounded me-2" alt="...">
+                    <strong class="me-auto">Beverage Goblins</strong>
+                    <small>Now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    You are now exploring as a Member.
+                </div>
+            </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="guest-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="..." class="rounded me-2" alt="...">
+                    <strong class="me-auto">Beverage Goblins</strong>
+                    <small>Now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    You are now exploring as a Guest.
+                </div>
+            </div>
+        </div>
+        <!--REMOVE LATER!!-->
 
         <!--Start of Footer-->
         <div class="card row" id="footer">
             <div class="background-dark card-header">
-                Board Index
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Board Index</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Soft Drinks</li>
+                    </ol>
+                </nav>
             </div>
             <div class="background-light card-body flex-2">
                 <div class="col-6 col-md-3">
-                    <p><b>Legend :: </b>Administrators, Moderators, Users</p>
+                    <p><b>Legend :: </b><span class="adminTitle">Administrator</span>, <span
+                            class="modTitle">Moderators</span>, <span class="userTitle">Members</span></p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <p>Newest Member: <b>bubbletrouble</b></p>
+                    <p><b>Newest Member:</b> <span class="userTitle">bubbletrouble</span></p>
                 </div>
                 <div class="col-4 col-md-2">
-                    <p>Total Threads: <b>256</b></p>
+                    <p><b>Total Threads:</b> 256</p>
                 </div>
                 <div class="col-4 col-md-2">
-                    <p>Total Posts: <b>2752</b></p>
+                    <p><b>Total Posts:</b> 2752</p>
                 </div>
                 <div class="col-4 col-md-2">
-                    <p>Total Users: <b>78</b></p>
+                    <p><b>Total Users:</b> 78</p>
                 </div>
 
             </div>
         </div>
         <!--End of Footer-->
+
 
     </div>
     <!--End of Main Container-->

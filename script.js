@@ -27,6 +27,7 @@ var guestToast = document.getElementById("guest-toast")
 
 var memberOnlyElements = Array.from (document.getElementsByClassName('member-only'));
 var guestOnlyElements = Array.from (document.getElementsByClassName('guest-only'));
+var guestDisabledElements = Array.from (document.getElementsByClassName('guest-disabled'));
 
 memberSwitch.on('click', function () {
     console.log("Member switch pressed. You are now a guest");
@@ -47,6 +48,10 @@ memberSwitch.on('click', function () {
 
     guestOnlyElements.forEach(el => {
         $(el).removeClass('hide');
+    })
+
+    guestDisabledElements.forEach(el => {
+        $(el).addClass('disabled');
     })
 });
 
@@ -70,4 +75,36 @@ guestSwitch.on('click', function () {
     memberOnlyElements.forEach(el => {
         $(el).removeClass('hide');
     })
+
+    guestDisabledElements.forEach(el => {
+        $(el).removeClass('disabled');
+    })
 });
+
+/* COMMENT BOX PREVIEW */
+window.onload = function() {
+    function commentPreview(){
+        var previewContent = document.getElementById('comment').value;
+        if (previewContent.trim().length === 0) {
+            return false;
+        } else {
+            document.getElementById('preview-content').innerHTML = previewContent;
+            return false;
+        }
+    }
+    document.getElementById('preview-tab').onclick = commentPreview;
+}
+
+
+/* COMMENT BOX TABS (BOOTSTRAP) */
+const triggerTabList = document.querySelectorAll('#commentTab button')
+triggerTabList.forEach(triggerEl => {
+  const tabTrigger = new bootstrap.Tab(triggerEl)
+
+  triggerEl.addEventListener('click', event => {
+    event.preventDefault()
+    tabTrigger.show()
+  })
+})
+
+

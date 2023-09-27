@@ -19,50 +19,138 @@
 <body>
     <!--Start of Header (Background + Logo + Title)-->
     <header>
-        <div class="box header">
-            <a href="Index.html" class="logo" title="Beverage Goblins Logo">
-                <img src="img/alt-logo.png" alt="Logo" class="logo-img">
+
+        <div class="box row">
+            <a href="index.html" class="logo">
+
+                <!--Logo-->
                 <div>
+                    <img src="img/logo.png" alt="Logo" class="logo-img">
+                </div>
+
+                <!--Title-->
+                <div class="text-center">
                     <span class="logo-font">
                         Beverage
                         Goblins
                     </span>
                 </div>
+
+                <!--Logo-->
+                <div>
+                    <img src="img/logo.png" alt="Logo" class="logo-img flip">
+                </div>
+
             </a>
         </div>
+
     </header>
     <!--End of Header-->
+
 
     <!--Start of Main Container-->
     <div class="banner clearfix container-fluid ">
 
         <!--Start of Banner (Welcome + Log In/ Sign In + User Icon (After Log In) + Breadcrumbs)-->
-        <div class="background-light card flex-1 row">
-            <div class="col-md-8 p-4">
+        <div class="background-light card flex-1 row" id="banner">
+
+            <!--Welcome message-->
+            <div class="col-md-6 banner-message">
                 <p class="header-font">
-                    Welcome to Soft Drinks.
-                    <br> Here you can discuss anything related to all carbonated drinks.
+                    Welcome to the Beverage Goblins online community.
+                    <br> A place to discuss all things related to drinks with other people that share your enthusiasm
+                    for beverages.
                 </p>
             </div>
 
-            <div class="col-md-4 p-4 text-justify">
-                <span>
-                    <a href="#index.html" class="btn btn-link" role="button" title="Sign Up">Sign Up</a>
+            <!--Guest only-->
+            <div class="col-md-4 text-justify guest-only" id="buttonPanel">
+
+                <span class="">
+                    <a href="" class="card-body std-pink-btn" id="registerBtn">Register</a>
                 </span>
-                <span>
-                    <a href="#index.html" class="btn btn-link" role="button" title="Sign In">Sign In</a>
+                <span class="">
+                    <a href="" class="card-body std-purple-btn" id="signInBtn">Sign In</a>
                 </span>
 
-                <!--USER ICON TO DISPLAY AFTER LOG IN-->
-                <!-- <span>
-                    <i class="fa-border fa-solid fa-user" style="color: #1d1d09;"></i>
-                </span> -->
             </div>
-            <div class="background-dark card-footer justify-content-start">
-                <div class="col-md">
-                    Board Index » Soft Drinks » Pepsi Vs Coke
+
+            <!--Member only - Member panel-->
+            <div class="m-1 col-md-5 member-only hide flex-1" id="userPanel">
+
+                <!--User picture-->
+                <div class="user-picture-container-header">
+                    <a href="#" title="Go to profile">
+                        <img src="img/ppic.png" alt="Profile Picture" class="img-thumbnail">
+                    </a>
                 </div>
+
+                <!--User welcome-->
+                <div class="m-auto text-center" id="userWelcome">
+                    <span class="p-1">
+                        <em>
+                            Welcome,
+                            <span class="userTitle">Pengu</span>!
+                        </em>
+                    </span>
+                </div>
+
+                <div class="m-auto" id="banner-user-options">
+
+                    <div class="p-2">
+                        <!--Profile-->
+                        <div class="p-1">
+                            <a href="#" title="Go to profile" class="lighter-link">
+                                <i class="fa-solid fa-user"></i>
+                                My Profile
+                            </a>
+                        </div>
+                        <!--Settings-->
+                        <div class="p-1">
+                            <a href="#" title="Edit your profile" class="lighter-link">
+                                <i class="fa-solid fa-gear"></i>
+                                Settings
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-2">
+                        <!--Inbox-->
+                        <div class="p-1">
+                            <a href="#" title="Go to inbox" class="lighter-link">
+                                <i class="fa-solid fa-inbox"></i>
+                                Inbox
+                            </a>
+                        </div>
+                        <!--Sign Out-->
+                        <div class="p-1">
+                            <a href="" title="Sign Out" class="lighter-link">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Sign Out
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+            <!--End of member panel-->
+
+            <!--Breadcrumbs-->
+            <div class="background-dark card-footer justify-content-start">
+
+                <div class="col-md">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Board Index</a></li>
+                            <li class="breadcrumb-item"><a href="Subforum.html">Soft Drinks</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Current Thread</li>
+                        </ol>
+                    </nav>
+                </div>
+
+            </div>
+
         </div>
         <!--End of Banner-->
 
@@ -86,17 +174,17 @@
 
 
                 <!--Post start-->
-                <article class="background-light card post-container" id="comment-1">
+                <article class="background-white card post-container" id="comment-1">
 
                     <div class="row">
                         <!--Side content (Author, image, info)-->
                         <div class="aside-post hidden-mobile col-md-2">
-                            <a href="" title="Go to profile" class="user-link">
+                            <a href="#" title="Go to profile" class="user-link">
                                 <h3 class="aside-user-style">Souda</h3>
                             </a>
                             <ul>
                                 <li>
-                                    <a href="" class="aside-user-photo-container">
+                                    <a href="#" class="aside-user-photo-container" title="Go to profile">
                                         <i class="fa-regular fa-circle-user aside-user-photo"></i>
                                     </a>
                                 </li>
@@ -120,16 +208,24 @@
                             <div>
                                 <div class="dropdown-center">
                                     <!--Ellipsis-->
-                                    <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis ellipsis"></i>
                                     </a>
 
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="" class="dropdown-item" data-bs-toggle="modal"
+                                            <a href="#" class="dropdown-item" data-bs-toggle="modal"
                                                 data-bs-target="#shareModal">
+                                                <i class="fa-solid fa-share-nodes padding-right-icon"></i>
                                                 Share
                                             </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">
+                                                <i class="fa-solid fa-pen padding-right-icon"></i>
+                                                Edit
+                                            </a>
+                                            <!--Only the creator of the comment OR moderators/admins should see this button-->
                                         </li>
                                     </ul>
                                 </div>
@@ -137,13 +233,15 @@
                                 <div class="only-mobile">
 
                                     <div class="post-top-user-photo-automargin">
-                                        <a href="" class="post-top-user-photo-container">
+                                        <a href="#" class="post-top-user-photo-container" title="Go to profile">
                                             <i class="fa-regular fa-circle-user post-top-user-photo"></i>
                                         </a>
                                     </div>
 
                                     <div>
-                                        <h4 class="post-top-title">Souda</h4>
+                                        <a href="#" title="Go to profile">
+                                            <h4 class="post-top-title">Souda</h4>
+                                        </a>
                                         <a href="#comment-1" class="post-top-subtitle" title="Jump to comment">
                                             Posted <time datetime="2023-09-04T12:05:00">September 4</time>
                                         </a>
@@ -151,7 +249,9 @@
                                 </div>
 
                                 <!-- For regular display -->
-                                <h4 class="post-top-title hidden-mobile">Pepsi Vs Coke</h4>
+                                <a href="#comment-1" title="Jump to comment">
+                                    <h4 class="post-top-title hidden-mobile">Pepsi Vs Coke</h4>
+                                </a>
                                 <a href="#comment-1" class="post-top-subtitle hidden-mobile" title="Jump to comment">
                                     Posted <time datetime="2023-09-04T12:05:00">September 4</time>
                                 </a>
@@ -171,17 +271,17 @@
                 <!--End of Post Content-->
 
                 <!--Post start-->
-                <article class="background-light card post-container" id="comment-2">
+                <article class="background-white card post-container" id="comment-2">
 
                     <div class="row">
                         <!--Side content (Author, image, info)-->
                         <div class="aside-post hidden-mobile col-md-2">
-                            <a href="" title="Go to profile" class="user-link">
+                            <a href="#" title="Go to profile" class="user-link">
                                 <h3 class="aside-user-style">Juiced</h3>
                             </a>
                             <ul>
                                 <li>
-                                    <a href="" class="aside-user-photo-container">
+                                    <a href="#" class="aside-user-photo-container" title="Go to profile">
                                         <i class="fa-regular fa-circle-user aside-user-photo"></i>
                                     </a>
                                 </li>
@@ -205,16 +305,24 @@
                             <div>
                                 <div class="dropdown-center">
                                     <!--Ellipsis-->
-                                    <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis ellipsis"></i>
                                     </a>
 
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="" class="dropdown-item" data-bs-toggle="modal"
+                                            <a href="#" class="dropdown-item" data-bs-toggle="modal"
                                                 data-bs-target="#shareModal">
+                                                <i class="fa-solid fa-share-nodes padding-right-icon"></i>
                                                 Share
                                             </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">
+                                                <i class="fa-solid fa-pen padding-right-icon"></i>
+                                                Edit
+                                            </a>
+                                            <!--Only the creator of the comment OR moderators/admins should see this button-->
                                         </li>
                                     </ul>
                                 </div>
@@ -222,22 +330,26 @@
                                 <div class="only-mobile">
 
                                     <div class="post-top-user-photo-automargin">
-                                        <a href="" class="post-top-user-photo-container">
+                                        <a href="#" class="post-top-user-photo-container" title="Go to profile">
                                             <i class="fa-regular fa-circle-user post-top-user-photo"></i>
                                         </a>
                                     </div>
 
                                     <div>
-                                        <h4 class="post-top-title">Juiced</h4>
-                                        <a href="#comment-1" class="post-top-subtitle" title="Jump to comment">
+                                        <a href="#" title="Go to profile">
+                                            <h4 class="post-top-title">Juiced</h4>
+                                        </a>
+                                        <a href="#comment-2" class="post-top-subtitle" title="Jump to comment">
                                             Posted <time datetime="2023-09-04T12:55:00">September 4</time>
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- For regular display -->
-                                <h4 class="post-top-title hidden-mobile">Re: Pepsi Vs Coke</h4>
-                                <a href="#comment-1" class="post-top-subtitle hidden-mobile" title="Jump to comment">
+                                <a href="#comment-2" title="Jump to comment">
+                                    <h4 class="post-top-title hidden-mobile">Re: Pepsi Vs Coke</h4>
+                                </a>
+                                <a href="#comment-2" class="post-top-subtitle hidden-mobile" title="Jump to comment">
                                     Posted <time datetime="2023-09-04T12:05:00">September 4</time>
                                 </a>
                             </div>
@@ -264,17 +376,17 @@
                 <!--End of Post Content-->
 
                 <!--Post start-->
-                <article class="background-light card post-container" id="comment-3">
+                <article class="background-white card post-container" id="comment-3">
 
                     <div class="row">
                         <!--Side content (Author, image, info)-->
                         <div class="aside-post hidden-mobile col-md-2">
-                            <a href="" title="Go to profile" class="user-link">
+                            <a href="#" title="Go to profile" class="user-link">
                                 <h3 class="aside-user-style">Fizzy</h3>
                             </a>
                             <ul>
                                 <li>
-                                    <a href="" class="aside-user-photo-container">
+                                    <a href="#" class="aside-user-photo-container" title="Go to profile">
                                         <i class="fa-regular fa-circle-user aside-user-photo"></i>
                                     </a>
                                 </li>
@@ -298,16 +410,24 @@
                             <div>
                                 <div class="dropdown-center">
                                     <!--Ellipsis-->
-                                    <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis ellipsis"></i>
                                     </a>
 
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="" class="dropdown-item" data-bs-toggle="modal"
+                                            <a href="#" class="dropdown-item" data-bs-toggle="modal"
                                                 data-bs-target="#shareModal">
+                                                <i class="fa-solid fa-share-nodes padding-right-icon"></i>
                                                 Share
                                             </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">
+                                                <i class="fa-solid fa-pen padding-right-icon"></i>
+                                                Edit
+                                            </a>
+                                            <!--Only the creator of the comment OR moderators/admins should see this button-->
                                         </li>
                                     </ul>
                                 </div>
@@ -315,22 +435,26 @@
                                 <div class="only-mobile">
 
                                     <div class="post-top-user-photo-automargin">
-                                        <a href="" class="post-top-user-photo-container">
+                                        <a href="#" class="post-top-user-photo-container" title="Go to profile">
                                             <i class="fa-regular fa-circle-user post-top-user-photo"></i>
                                         </a>
                                     </div>
 
                                     <div>
-                                        <h4 class="post-top-title">Fizzy</h4>
-                                        <a href="#comment-1" class="post-top-subtitle" title="Jump to comment">
+                                        <a href="#" title="Go to profile">
+                                            <h4 class="post-top-title">Fizzy</h4>
+                                        </a>
+                                        <a href="#comment-3" class="post-top-subtitle" title="Jump to comment">
                                             Posted <time datetime="2023-09-04T12:55:00">September 4</time>
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- For regular display -->
-                                <h4 class="post-top-title hidden-mobile">Re: Pepsi Vs Coke</h4>
-                                <a href="#comment-1" class="post-top-subtitle hidden-mobile" title="Jump to comment">
+                                <a href="#comment-3" title="Jump to comment">
+                                    <h4 class="post-top-title hidden-mobile">Re: Pepsi Vs Coke</h4>
+                                </a>
+                                <a href="#comment-3" class="post-top-subtitle hidden-mobile" title="Jump to comment">
                                     Posted <time datetime="2023-09-04T12:05:00">September 4</time>
                                 </a>
                             </div>
@@ -362,15 +486,16 @@
                         </div>
 
                         <div class="guest-teaser-lower-box row">
-                            <div class="box-shadow-2 col-5 guest-teaser-inner-box border-round-bottom">
+                            <div class="box-shadow-2 glow col-5 guest-teaser-inner-box border-round-bottom"
+                                id="signUpBox">
                                 <h6 class="card-header">Create an account</h6>
                                 <p class="card-body">Sign up for a new account now!</p>
-                                <a href="" class="card-body guest-teaser-register-button">Sign Up Now</a>
+                                <a href="#" class="card-body std-rnbw-btn">Sign Up Now</a>
                             </div>
-                            <div class="box-shadow-2 col-5 guest-teaser-inner-box border-round-bottom">
+                            <div class="box-shadow-2 col-5 guest-teaser-inner-box border-round-bottom" id="signInBox">
                                 <h6 class="card-header">Sign in</h6>
                                 <p class="card-body">Already have an account? Sign in here!</p>
-                                <a href="" class="card-body guest-teaser-register-button">Sign In Here</a>
+                                <a href="#" class="card-body std-purple-btn">Sign In Here</a>
                             </div>
                         </div>
 
@@ -380,30 +505,126 @@
                 <!--End of Guest Teaser (GUEST ONLY)-->
 
                 <!--Message Box (MEMBER ONLY)-->
-                <section class="card comment-container member-only hide">
-                    <form action="" class="">
-                        <div class="row">
-
-                            <div action="" class="form-floating">
-                                <input type="text" class="form-control" id="replyTitle"
-                                    placeholder="Subject" value="Re: Pepsi Vs Coke">
-                                <label for="replyTitle">Subject</label>
-                            </div>
-
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                    style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Leave a comment</label>
-                            </div>
-                            <div>
-                                <input type="submit" value="Reply" title="Reply">
+                <div class="card comment-container member-only hide">
+                    <div class="row">
+                        <!--TABS-->
+                        <ul class="nav nav-tabs comment-tab-list" id="commentTab" role="tablist">
+                            <!--WRITE-->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active comment-tab" id="write-tab" data-bs-toggle="tab"
+                                    data-bs-target="#write-tab-pane" type="button" role="tab"
+                                    aria-controls="write-tab-pane" aria-selected="true">Write</button>
+                            </li>
+                            <!--PREVIEW-->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link comment-tab" id="preview-tab" data-bs-toggle="tab"
+                                    data-bs-target="#preview-tab-pane" type="button" role="tab"
+                                    aria-controls="preview-tab-pane" aria-selected="true">Preview</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--TAB CONTENT-->
+                    <div class="tab-content" id="commentTabContent">
+                        <!--WRITE-->
+                        <div class="tab-pane fade active show comment-box" id="write-tab-pane" role="tabpanel"
+                            aria-labelledby="write-tab" tabindex="0">
+                            <textarea class="form-control" name="" id="comment" cols="30" rows="7"
+                                placeholder="Write a comment"></textarea>
+                            <div class="tab-pane-bttm">
+                                <button type="submit" class="std-purple-btn">Reply</button>
                             </div>
                         </div>
+                        <!--PREVIEW-->
 
 
-                    </form>
-                </section>
 
+                        <div class="tab-pane fade preview-box" role="tabpanel" id="preview-tab-pane"
+                            aria-labelledby="preview-tab" tabindex="0">
+
+                            <article class="background-white card post-container" id="comment-preview">
+
+                                <div class="row">
+                                    <!--Side content (Author, image, info)-->
+                                    <div class="aside-post hidden-mobile col-md-2">
+                                        <a href="#" title="Go to profile" class="user-link">
+                                            <h3 class="aside-user-style">Pengu</h3>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="aside-user-photo-container" title="Go to profile">
+                                                    <i class="fa-regular fa-circle-user aside-user-photo"></i>
+                                                </a>
+                                            </li>
+                                            <li class="margin-bt-20">
+                                                <span class="aside-mod-title">Member</span>
+                                            </li>
+                                            <li class="aside-left-align">
+                                                <span class="aside-subtitle">Posts: 11</span>
+
+                                            </li>
+                                            <li class="aside-left-align">
+                                                <span class="aside-subtitle">Joined: 25th Sep, 2023</span>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--End of side content-->
+                                    <!--Main Content-->
+                                    <div class="col-12 col-md-10 post-top">
+                                        <!--Top of Post (Title, date, buttons)-->
+                                        <div>
+                                            <div class="dropdown-center">
+                                                <!--Ellipsis-->
+                                                <a href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis ellipsis"></i>
+                                                </a>
+
+                                            </div>
+                                            <!-- Only for mobile -->
+                                            <div class="only-mobile">
+
+                                                <div class="post-top-user-photo-automargin">
+                                                    <a href="#" class="post-top-user-photo-container"
+                                                        title="Go to profile">
+                                                        <i class="fa-regular fa-circle-user post-top-user-photo"></i>
+                                                    </a>
+                                                </div>
+
+                                                <div>
+                                                    <a href="#" title="Go to profile">
+                                                        <h4 class="post-top-title">Pengu</h4>
+                                                    </a>
+                                                    <a href="#" class="post-top-subtitle"
+                                                        title="Jump to comment">
+                                                        Posted <time datetime="2023-09-04T12:55:00">September 4</time>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- For regular display -->
+                                            <a href="#comment-3" title="Jump to comment">
+                                                <h4 class="post-top-title hidden-mobile">Re: Pepsi Vs Coke</h4>
+                                            </a>
+                                            <a href="#comment-3" class="post-top-subtitle hidden-mobile"
+                                                title="Jump to comment">
+                                                Posted <time datetime="2023-09-04T12:05:00">September 4</time>
+                                            </a>
+                                        </div>
+                                        <!--Body of Post-->
+                                        <div class="post-body">
+                                            <p id="preview-content">
+                                                Nothing to preview.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--End of Main Content-->
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
                 <!--End of Message Box (MEMBER ONLY)-->
 
             </div>
@@ -412,8 +633,8 @@
         <!--End of Thread Container-->
 
         <!--Go back to thread list-->
-        <div class="pager-container">
-            <a href="Subforum.html">
+        <div class="pager-container topic-listing-link">
+            <a href="Subforum.html" class="">
                 <i class="fa-solid fa-chevron-left"></i> Go back to topic listing
             </a>
         </div>
@@ -461,23 +682,30 @@
         <!--Start of Footer-->
         <div class="card row" id="footer">
             <div class="background-dark card-header">
-                Board Index
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Board Index</a></li>
+                        <li class="breadcrumb-item"><a href="Subforum.html">Soft Drinks</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Current Thread</li>
+                    </ol>
+                </nav>
             </div>
             <div class="background-light card-body flex-2">
                 <div class="col-6 col-md-3">
-                    <p><b>Legend :: </b>Administrators, Moderators, Users</p>
+                    <p><b>Legend :: </b><span class="adminTitle">Administrator</span>, <span
+                            class="modTitle">Moderators</span>, <span class="userTitle">Members</span></p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <p>Newest Member: <b>bubbletrouble</b></p>
+                    <p><b>Newest Member:</b> <span class="userTitle">bubbletrouble</span></p>
                 </div>
                 <div class="col-4 col-md-2">
-                    <p>Total Threads: <b>256</b></p>
+                    <p><b>Total Threads:</b> 256</p>
                 </div>
                 <div class="col-4 col-md-2">
-                    <p>Total Posts: <b>2752</b></p>
+                    <p><b>Total Posts:</b> 2752</p>
                 </div>
                 <div class="col-4 col-md-2">
-                    <p>Total Users: <b>78</b></p>
+                    <p><b>Total Users:</b> 78</p>
                 </div>
 
             </div>

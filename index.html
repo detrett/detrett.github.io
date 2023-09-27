@@ -16,17 +16,31 @@
 <body>
     <!--Start of Header (Background + Logo + Title)-->
     <header>
-        <div class="box">
-            <a href="Index.html" class="logo">
-                <img src="img/alt-logo.png" alt="Logo" class="logo-img">
+
+        <div class="box row">
+            <a href="index.html" class="logo">
+
+                <!--Logo-->
                 <div>
+                    <img src="img/logo.png" alt="Logo" class="logo-img">
+                </div>
+
+                <!--Title-->
+                <div class="text-center">
                     <span class="logo-font">
                         Beverage
                         Goblins
                     </span>
                 </div>
+
+                <!--Logo-->
+                <div>
+                    <img src="img/logo.png" alt="Logo" class="logo-img flip">
+                </div>
+
             </a>
         </div>
+
     </header>
     <!--End of Header-->
 
@@ -34,8 +48,10 @@
     <div class="banner clearfix container-fluid ">
 
         <!--Start of Banner (Welcome + Log In/ Sign In + User Icon (After Log In) + Breadcrumbs)-->
-        <div class="background-light card flex-1 row">
-            <div class="col-md-8 p-4">
+        <div class="background-light card flex-1 row" id="banner">
+
+            <!--Welcome message-->
+            <div class="col-md-6 banner-message">
                 <p class="header-font">
                     Welcome to the Beverage Goblins online community.
                     <br> A place to discuss all things related to drinks with other people that share your enthusiasm
@@ -43,56 +59,145 @@
                 </p>
             </div>
 
-            <div class="col-md-4 p-4 text-justify">
-                <span>
-                    <a href="#index.html" class="btn btn-link" role="button">Sign Up</a>
+            <!--Guest only-->
+            <div class="col-md-4 text-justify guest-only" id="buttonPanel">
+
+                <span class="">
+                    <a href="" class="card-body std-pink-btn" id="registerBtn">Register</a>
                 </span>
-                <span>
-                    <a href="#index.html" class="btn btn-link" role="button">Sign In</a>
+                <span class="">
+                    <a href="" class="card-body std-purple-btn" id="signInBtn">Sign In</a>
                 </span>
 
-                <!--USER ICON TO DISPLAY AFTER LOG IN-->
-                <!-- <span>
-                    <i class="fa-border fa-solid fa-user" style="color: #1d1d09;"></i>
-                </span> -->
             </div>
-            <div class="background-dark card-footer justify-content-start">
-                <div class="col-md">
-                    Board Index
+
+            <!--Member only - Member panel-->
+            <div class="m-1 col-md-5 member-only hide flex-1" id="userPanel">
+
+                <!--User picture-->
+                <div class="user-picture-container-header">
+                    <a href="#" title="Go to profile">
+                        <img src="img/ppic.png" alt="Profile Picture" class="img-thumbnail">
+                    </a>
                 </div>
+
+                <!--User welcome-->
+                <div class="m-auto text-center" id="userWelcome">
+                    <span class="p-1">
+                        <em>
+                            Welcome,
+                            <span class="userTitle">Pengu</span>!
+                        </em>
+                    </span>
+                </div>
+
+                <div class="m-auto" id="banner-user-options">
+
+                    <div class="p-2">
+
+                        <!--Profile-->
+                        <div class="p-1">
+                            <a href="#" title="Go to profile" class="lighter-link">
+                                <i class="fa-solid fa-user"></i>
+                                My Profile
+                            </a>
+                        </div>
+
+                        <!--Settings-->
+                        <div class="p-1">
+                            <a href="#" title="Edit your profile" class="lighter-link">
+                                <i class="fa-solid fa-gear"></i>
+                                Settings
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-2">
+
+                        <!--Inbox-->
+                        <div class="p-1">
+                            <a href="#" title="Go to inbox" class="lighter-link">
+                                <i class="fa-solid fa-inbox"></i>
+                                Inbox
+                            </a>
+                        </div>
+
+                        <!--Sign Out-->
+                        <div class="p-1">
+                            <a href="" title="Sign Out" class="lighter-link">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Sign Out
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+            <!--End of member panel-->
+
+            <!--Breadcrumbs-->
+            <div class="background-dark card-footer justify-content-start">
+
+                <div class="col-md">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Board Index</li>
+                        </ol>
+                    </nav>
+                </div>
+
+            </div>
+
         </div>
-
-
         <!--End of Banner-->
 
         <!--"Forums" Title-->
         <div class="row">
+
             <div class="col" id="title">
                 <h1 class="title-font">Forums</h1>
             </div>
+
         </div>
 
         <!--Start of Main Forums Container (Forum Title + Subforum List + Collapsible Button)-->
         <section class="forum-container">
-            <div class="bg-gradient row">
+
+            <!--Main Forum Header-->
+            <div class="bg-gradient row" aria-expanded="true">
+
                 <h2 class="col-6 list-title-font">Main Forums</h2>
                 <a class="col-6" data-bs-toggle="collapse" href="#mainForums" role="button" aria-expanded="true"
                     aria-controls="mainForums">
-                    <i class="fa-solid fa-minus icon-right" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-minus icon-right" style="color: #2d293c;"></i>
+                    <i class="fa-solid fa-plus icon-right" style="color: #2d293c;"></i>
                 </a>
+
             </div>
+
             <div class="show" id="mainForums">
-                <!--THIS PART WILL BE IMPLEMENTED BY THE FRAMEWORK USING THE DATABASE INSTEAD OF MANUALLY-->
+
+                <!--Main Forum List of Subforums-->
+                <!--THIS PART (AND MANY OTHERS..) WILL BE IMPLEMENTED BY THE FRAMEWORK USING THE DATABASE INSTEAD OF MANUALLY-->
                 <ul>
 
+                    <!--Subforum #1: Updates & Announcements-->
                     <li>
+
                         <div class="background-dark row std-height">
+
+                            <!--Bubble icon-->
                             <div class="col-1 icon-container hidden-mobile">
-                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                                <a href="Subforum.html" title="Go to Subforum">
+                                    <i class="fa-regular fa-message fa-2xl" style="color: #2d293c;"></i>
+                                </a>
                             </div>
+
+                            <!--Forum title + description -->
                             <div class="col-9 col-md-4 forum-title-container-sm">
-                                <p class="forum-title-font">Updates & Announcements</p>
+                                <a href="Subforum.html" class="forum-title-font std-link"
+                                    title="Go to Updates & Announcements">Updates & Announcements</a>
                                 <!--@subforum.Title-->
                                 <p class="margin-bt-12">Information about what's happening in the Beverage
                                     Goblins forum.</p>
@@ -100,54 +205,93 @@
                             </div>
 
                             <div class="col-2 icon-container">
+
                                 <ul>
+
+                                    <!--Last poster user picture-->
                                     <li class="centered">
-                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                        <a href="#" title="Go to User Profile">
+                                            <i class="fa-regular fa-circle-user fa-2xl" style="color: #2d293c;"></i>
+                                        </a>
                                     </li>
+
+                                    <!-- Only for mobile viewing : date of last post -->
                                     <li class="only-mobile">
                                         <p class="date-font">Today</p>
                                     </li>
+
                                 </ul>
+
                             </div>
 
                             <div class="col-md-5 forum-title-container-sm hidden-mobile">
-                                <p class="thread-title-font-lg">Drink of the Year 2023 Winner Awards!</p>
-                                <!--@thread.Title-->
-                                <p class="thread-subtitle-font">By <b>Fizzy</b>, 8 hours ago</p>
-                                <!--"By @thread.LastComment.User, @thread.LastComment.TimeSince"-->
+
+                                <!--Last post thread title-->
+                                <a href="#" class="thread-title-font-lg" title="Go to Thread">Drink of the Year 2023
+                                    Winner Awards!</a>
+                                <!--@std.Title-->
+
+                                <!--Last post username and date-->
+                                <p class="std-subtitle-font">By <a href="#" class="adminTitle"
+                                        title="Go to User Profile">Fizzy</a>, 8 hours ago
+                                </p>
+                                <!--"By @std.LastComment.User, @std.LastComment.TimeSince"-->
+
                             </div>
                         </div>
                     </li>
 
                     <li>
+
+                        <!--Subforum #2: Introduce Yourself-->
                         <div class="background-light border-round-bottom row std-height">
+
+                            <!--Bubble icon-->
                             <div class="col-1 icon-container hidden-mobile">
-                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                                <a href="Subforum.html" title="Go to Subforum">
+                                    <i class="fa-regular fa-message fa-2xl" style="color: #2d293c;"></i>
+                                </a>
                             </div>
+
+                            <!--Forum title + description-->
                             <div class="col-9 col-md-4 forum-title-container-sm">
-                                <p class="forum-title-font">Introduce Yourself</p>
+                                <a href="Subforum.html" class="forum-title-font std-link"
+                                    title="Go to Introduce Yourself">Introduce Yourself</a>
                                 <p class="margin-bt-12">A space for new members to introduce themselves to the
                                     community.</p>
                             </div>
 
+                            <!--Last poster user picture-->
                             <div class="col-2 icon-container">
                                 <ul>
+
                                     <li class="centered">
-                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                        <a href="#" title="Go to User Profile">
+                                            <i class="fa-regular fa-circle-user fa-2xl" style="color: #2d293c;"></i>
+                                        </a>
                                     </li>
+
+                                    <!--Only mobile: last post date-->
                                     <li class="only-mobile">
                                         <p class="date-font">Today</p>
                                     </li>
+
                                 </ul>
                             </div>
 
                             <div class="col-md-5 forum-title-container-sm hidden-mobile">
-                                <p class="thread-title-font-lg">Hi everyone :)</p>
-                                <p class="thread-subtitle-font">By <b>bubbletrouble</b>, 2 hours ago</p>
+
+                                <!--Last post thread title-->
+                                <a href="#" class="thread-title-font-lg" title="Go to Thread">Hi everyone :)</a>
+
+                                <!--Last post username and date-->
+                                <p class="std-subtitle-font">By <a href="#" class="userTitle"
+                                        title="Go to User Profile">bubbletrouble</a>, 2 hours ago</p>
+
                             </div>
+
                         </div>
                     </li>
-
                 </ul>
             </div>
         </section>
@@ -155,74 +299,127 @@
 
         <!--Start of Discussion Forums Container (Forum Title + Subforum List + Collapsible Button)-->
         <section class="forum-container">
+
+            <!--Discussion Forum Header-->
             <div class="bg-gradient row">
                 <h2 class="col-6 list-title-font">Discussions</h2>
                 <a class="col-6" data-bs-toggle="collapse" href="#discussionForums" role="button" aria-expanded="true"
                     aria-controls="discussionForums">
-                    <i class="fa-solid fa-minus icon-right" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-minus icon-right" style="color: #2d293c;"></i>
+                    <i class="fa-solid fa-plus icon-right" style="color: #2d293c;"></i>
                 </a>
             </div>
+
             <div class="show" id="discussionForums">
-                <!--THIS PART WILL BE IMPLEMENTED BY THE FRAMEWORK USING THE DATABASE INSTEAD OF MANUALLY-->
+
                 <ul>
 
+                    <!--Discussion Forum List of Subforums-->
                     <li>
                         <div class="background-dark row std-height">
+
+                            <!--Bubble icon-->
                             <div class="col-1 icon-container hidden-mobile">
-                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                                <a href="Subforum.html" title="Go to Subforum">
+                                    <i class="fa-regular fa-message fa-2xl" style="color: #2d293c;"></i>
+                                </a>
                             </div>
+
+                            <!--Subforum #3: Soft Drinks-->
                             <div class="col-9 col-md-4 forum-title-container-sm">
-                                <a href="Subforum.html" class="forum-title-font thread-link">Soft Drinks</a>
+                                <a href="Subforum.html" class="forum-title-font std-link" title="Go to Soft Drinks">Soft
+                                    Drinks</a>
                                 <!--@subforum.Title-->
+
+                                <!--Forum title + description -->
                                 <p class="margin-bt-12">A place to discuss your favorite carbonated drinks.</p>
                                 <!--@subforum.Description-->
                             </div>
 
                             <div class="col-2 icon-container">
                                 <ul>
+
+                                    <!--Last poster user picture-->
                                     <li class="centered">
-                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                        <a href="#" title="Go to User Profile">
+                                            <i class="fa-regular fa-circle-user fa-2xl" style="color: #2d293c;"></i>
+                                        </a>
                                     </li>
+
+                                    <!-- Only for mobile viewing : date of last post -->
                                     <li class="only-mobile">
                                         <p class="date-font">Sep 6</p>
-                                        <!--@thread.LastReply.Date-->
+                                        <!--@std.LastReply.Date-->
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="col-md-5 forum-title-container-sm hidden-mobile">
-                                <p class="thread-title-font-lg">Re: Alright here we go... Pepsi Vs Coke!!</p>
-                                <!--@thread.Title-->
-                                <p class="thread-subtitle-font">By <b>Turbo</b>, Wed Sep 6, 2023 12:41 pm</p>
-                                <!--"By @thread.LastComment.User, @thread.LastComment.TimeSince"-->
+
+                                <!--Last post thread title-->
+                                <a href="#" class="thread-title-font-lg" title="Go to Thread">Re: Alright here we go...
+                                    Pepsi Vs Coke!!</a>
+                                <!--@std.Title-->
+
+                                <!--Last post username and date-->
+                                <p class="std-subtitle-font">By <a href="#" class="userTitle"
+                                        title="Go to User Profile">Turbo</a>, Wed Sep 6,
+                                    2023 12:41 pm</p>
+                                <!--"By @std.LastComment.User, @std.LastComment.TimeSince"-->
                             </div>
                         </div>
                     </li>
 
                     <li>
                         <div class="background-light row std-height">
+
+                            <!--Bubble icon-->
                             <div class="col-1 icon-container hidden-mobile">
-                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                                <a href="Subforum.html" title="Go to Subforum">
+                                    <i class="fa-regular fa-message fa-2xl" style="color: #2d293c;"></i>
+                                </a>
                             </div>
+
                             <div class="col-9 col-md-4 forum-title-container-sm">
-                                <p class="forum-title-font">Energy Drinks</p>
+
+                                <!--Subforum #4: Energy Drinks-->
+                                <a href="Subforum.html" class="forum-title-font std-link"
+                                    title="Go to Energy Drinks">Energy Drinks</a>
+
+                                <!--Forum title + description -->
                                 <p class="margin-bt-12">For those who are in search of a little boost.</p>
+
                             </div>
 
                             <div class="col-2 icon-container">
                                 <ul>
+
+                                    <!--Last poster user picture-->
                                     <li class="centered">
-                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                        <a href="#" title="Go to User Profile">
+                                            <i class="fa-regular fa-circle-user fa-2xl" style="color: #2d293c;"></i>
+                                        </a>
                                     </li>
+
+                                    <!-- Only for mobile viewing : date of last post -->
                                     <li class="only-mobile">
                                         <p class="date-font">Today</p>
                                     </li>
+
                                 </ul>
                             </div>
 
                             <div class="col-md-5 forum-title-container-sm hidden-mobile">
-                                <p class="thread-title-font-lg">Definitive Monster flavours tier list</p>
-                                <p class="thread-subtitle-font">By <b>m0nst3r4dd1ct</b>, 37 minutes ago</p>
+
+                                <!--Last post thread title-->
+                                <a href="#" class="thread-title-font-lg" title="Go to Thread">Definitive Monster
+                                    flavours tier list</a>
+
+                                <!--Last post username and date-->
+                                <p class="std-subtitle-font">By <a href="#" class="modTitle"
+                                        title="Go to User Profile">m0nst3r4dd1ct</a>, 37
+                                    minutes ago</p>
+
                             </div>
                         </div>
                     </li>
@@ -230,10 +427,12 @@
                     <li>
                         <div class="background-dark row std-height">
                             <div class="col-1 icon-container hidden-mobile">
-                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                                <a href="Subforum.html" title="Go to Subforum">
+                                    <i class="fa-regular fa-message fa-2xl" style="color: #2d293c;"></i>
+                                </a>
                             </div>
                             <div class="col-9 col-md-4 forum-title-container-sm">
-                                <p class="forum-title-font">Water</p>
+                                <a href="Subforum.html" class="forum-title-font std-link" title="Go to Water">Water</a>
                                 <p class="margin-bt-12">This is a space to discuss the importance of staying
                                     hydrated in a world full of tasty drinks.</p>
                             </div>
@@ -241,7 +440,9 @@
                             <div class="col-2 icon-container">
                                 <ul>
                                     <li class="centered">
-                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                        <a href="#" title="Go to User Profile">
+                                            <i class="fa-regular fa-circle-user fa-2xl" style="color: #2d293c;"></i>
+                                        </a>
                                     </li>
                                     <li class="only-mobile">
                                         <p class="date-font">Sep 5</p>
@@ -250,10 +451,13 @@
                             </div>
 
                             <div class="col-md-5 forum-title-container-sm hidden-mobile">
-                                <p class="thread-title-font-lg">Re: WaterTok - Is flavoured water still considered
+                                <a href="#" class="thread-title-font-lg" title="Go to Thread">Re: WaterTok - Is
+                                    flavoured water still considered
                                     water?
-                                </p>
-                                <p class="thread-subtitle-font">By <b>hydration_nation</b>, Tue Sep 5, 2023 18:16 pm</p>
+                                </a>
+                                <p class="std-subtitle-font">By <a href="#" class="userTitle"
+                                        title="Go to User Profile">hydration_nation</a>,
+                                    Tue Sep 5, 2023 18:16 pm</p>
                             </div>
                         </div>
                     </li>
@@ -261,10 +465,13 @@
                     <li>
                         <div class="background-light border-round-bottom row std-height">
                             <div class="col-1 icon-container hidden-mobile">
-                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                                <a href="Subforum.html" title="Go to Subforum">
+                                    <i class="fa-regular fa-message fa-2xl" style="color: #2d293c;"></i>
+                                </a>
                             </div>
                             <div class="col-9 col-md-4 forum-title-container-sm">
-                                <p class="forum-title-font">Other Drinks</p>
+                                <a href="Subforum.html" class="forum-title-font std-link"
+                                    title="Go to Other Drinks">Other Drinks</a>
                                 <p class="margin-bt-12">Are you into smoothies, tea, kombucha or just plain old
                                     coffee? Discuss your love for all drinks that don't belong in the other forums.</p>
                             </div>
@@ -272,7 +479,9 @@
                             <div class="col-2 icon-container">
                                 <ul>
                                     <li class="centered">
-                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                        <a href="#" title="Go to User Profile">
+                                            <i class="fa-regular fa-circle-user fa-2xl" style="color: #2d293c;"></i>
+                                        </a>
                                     </li>
                                     <li class="only-mobile">
                                         <p class="date-font">Today</p>
@@ -281,8 +490,11 @@
                             </div>
 
                             <div class="col-md-5 forum-title-container-sm hidden-mobile">
-                                <p class="thread-title-font-lg">Just tried Kombucha for the first time</p>
-                                <p class="thread-subtitle-font">By <b>aGeverageBoblin</b>, 4 hours ago</p>
+                                <a href="#" class="thread-title-font-lg" title="Go to Thread">Just tried Kombucha for
+                                    the first time</a>
+                                <p class="std-subtitle-font">By <a href="#" class="userTitle"
+                                        title="Go to User Profile">aGeverageBoblin</a>, 4
+                                    hours ago</p>
                             </div>
                         </div>
                     </li>
@@ -294,24 +506,30 @@
 
         <!--Start of Other Forums Container (Forum Title + Subforum List + Collapsible Button)-->
         <section class="forum-container">
+
             <div class="bg-gradient row">
                 <h2 class="col-6 list-title-font">Other Forums</h2>
                 <a class="col-6" data-bs-toggle="collapse" href="#otherForums" role="button" aria-expanded="true"
                     aria-controls="otherForums">
-                    <i class="fa-solid fa-minus icon-right" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-minus icon-right" style="color: #2d293c;"></i>
+                    <i class="fa-solid fa-plus icon-right" style="color: #2d293c;"></i>
                 </a>
             </div>
+
             <div class="show" id="otherForums">
-                <!--THIS PART WILL BE IMPLEMENTED BY THE FRAMEWORK USING THE DATABASE INSTEAD OF MANUALLY-->
+                
                 <ul>
 
                     <li>
                         <div class="background-dark row std-height">
                             <div class="col-1 icon-container hidden-mobile">
-                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                                <a href="Subforum.html" title="Go to Subforum">
+                                    <i class="fa-regular fa-message fa-2xl" style="color: #2d293c;"></i>
+                                </a>
                             </div>
                             <div class="col-9 col-md-4 forum-title-container-sm">
-                                <p class="forum-title-font">Off Topic</p>
+                                <a href="Subforum.html" class="forum-title-font std-link" title="Go to Off Topic">Off
+                                    Topic</a>
                                 <!--@subforum.Title-->
                                 <p class="margin-bt-12">Any serious topics that are unrelated to beverages should go in
                                     here.</p>
@@ -321,7 +539,9 @@
                             <div class="col-2 icon-container">
                                 <ul>
                                     <li class="centered">
-                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                        <a href="#" title="Go to User Profile">
+                                            <i class="fa-regular fa-circle-user fa-2xl" style="color: #2d293c;"></i>
+                                        </a>
                                     </li>
                                     <li class="only-mobile">
                                         <p class="date-font">Today</p>
@@ -330,10 +550,12 @@
                             </div>
 
                             <div class="col-md-5 forum-title-container-sm hidden-mobile">
-                                <p class="thread-title-font-lg">Re: Control+V Thread</p>
-                                <!--@thread.Title-->
-                                <p class="thread-subtitle-font">By <b>The Hierophant</b>, 6 hours ago</p>
-                                <!--"By @thread.LastComment.User, @thread.LastComment.TimeSince"-->
+                                <a href="#" class="thread-title-font-lg" title="Go to Thread">Re: Control+V Thread</a>
+                                <!--@std.Title-->
+                                <p class="std-subtitle-font">By <a href="#" class="modTitle"
+                                        title="Go to User Profile">The Hierophant</a>, 6
+                                    hours ago</p>
+                                <!--"By @std.LastComment.User, @std.LastComment.TimeSince"-->
                             </div>
                         </div>
                     </li>
@@ -341,10 +563,13 @@
                     <li>
                         <div class="background-light border-round-bottom row std-height">
                             <div class="col-1 icon-container hidden-mobile">
-                                <i class="fa-regular fa-message fa-2xl" style="color: #ffffff;"></i>
+                                <a href="Subforum.html" title="Go to Subforum">
+                                    <i class="fa-regular fa-message fa-2xl" style="color: #2d293c;"></i>
+                                </a>
                             </div>
                             <div class="col-9 col-md-4 forum-title-container-sm">
-                                <p class="forum-title-font">Daily Rumble</p>
+                                <a href="Subforum.html" class="forum-title-font std-link"
+                                    title="Go to Daily Rumble">Daily Rumble</a>
                                 <p class="margin-bt-12">Long-running threads in which to discuss the small things about
                                     daily life.</p>
                             </div>
@@ -352,7 +577,9 @@
                             <div class="col-2 icon-container">
                                 <ul>
                                     <li class="centered">
-                                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                                        <a href="#" title="Go to User Profile">
+                                            <i class="fa-regular fa-circle-user fa-2xl" style="color: #2d293c;"></i>
+                                        </a>
                                     </li>
                                     <li class="only-mobile">
                                         <p class="date-font">Today</p>
@@ -361,8 +588,11 @@
                             </div>
 
                             <div class="col-md-5 forum-title-container-sm hidden-mobile">
-                                <p class="thread-title-font-lg">Re: Post your song of the day</p>
-                                <p class="thread-subtitle-font">By <b>Dr Itchy</b>, 16 hours ago</p>
+                                <a href="#" class="thread-title-font-lg" title="Go to Thread">Re: Post your song of the
+                                    day</a>
+                                <p class="std-subtitle-font">By <a href="#" class="userTitle"
+                                        title="Go to User Profile">Dr Itchy</a>, 16 hours
+                                    ago</p>
                             </div>
                         </div>
                     </li>
@@ -372,31 +602,92 @@
         </section>
         <!--End of Other Forums Container-->
 
+        <!--REMOVE LATER (?) !!!! GUEST-MEMBER SWITCH!-->
+        <button id="member-switch" class="show" data-bs-toggle="tooltip"
+            title="You are a guest. Switch to Member"></button>
+
+        <button id="guest-switch" data-bs-toggle="tooltip" title="You are a member. Switch to Guest"></button>
+
+        <!--REMOVE LATER (?) !!! TOASTS FOR THE GUEST-MEMBER SWITCH!!! -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+            <div id="member-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="200">
+                <div class="toast-header">
+                    <i class="fa-solid fa-1 padding-right-icon"></i>
+                    <strong class="me-auto">Beverage Goblins</strong>
+                    <small>Now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    You are now exploring as a <span class="userTitle">Member</span>.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+            <div id="guest-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="200">
+                <div class="toast-header">
+                    <i class="fa-solid fa-0 padding-right-icon"></i>
+                    <strong class="me-auto">Beverage Goblins</strong>
+                    <small>Now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    You are now exploring as a Guest.
+                </div>
+            </div>
+
+        </div>
+        <!--REMOVE LATER!!-->
+
         <!--Start of Footer-->
         <div class="card row" id="footer">
+
+            <!--Breadcrumbs-->
             <div class="background-dark card-header">
-                Board Index
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Board Index</li>
+                    </ol>
+                </nav>
             </div>
+
+            <!--Main content-->
             <div class="background-light card-body flex-2">
+
+                <!--Legend-->
                 <div class="col-6 col-md-3">
-                    <p><b>Legend :: </b>Administrators, Moderators, Users</p>
+                    <p><b>Legend :: </b><span class="adminTitle">Administrator</span>, <span
+                            class="modTitle">Moderators</span>, <span class="userTitle">Members</span></p>
                 </div>
+
+                <!--Newest Member-->
                 <div class="col-6 col-md-3">
-                    <p>Newest Member: <b>bubbletrouble</b></p>
+                    <p><b>Newest Member:</b> <a href="#" class="userTitle">bubbletrouble</a></p>
                 </div>
+
+                <!--Total Threads-->
                 <div class="col-4 col-md-2">
-                    <p>Total Threads: <b>256</b></p>
+                    <p><b>Total Threads:</b> 256</p>
                 </div>
+
+                <!--Total Posts-->
                 <div class="col-4 col-md-2">
-                    <p>Total Posts: <b>2752</b></p>
+                    <p><b>Total Posts:</b> 2752</p>
                 </div>
+
+                <!--Total Users-->
                 <div class="col-4 col-md-2">
-                    <p>Total Users: <b>78</b></p>
+                    <p><b>Total Users:</b> 78</p>
                 </div>
 
             </div>
+            <!--End of Main Content-->
         </div>
         <!--End of Footer-->
+
 
     </div>
     <!--End of Main Container-->
@@ -406,6 +697,7 @@
 
 
     <!--SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
         integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
